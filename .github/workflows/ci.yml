@@ -1,0 +1,18 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ci:
+    uses: wppoland/workflows/.github/workflows/_php-ci.yml@v1
+    with:
+      slug: proof
+      has-js: false
+      run-i18n: false
+      run-playwright: false
+      # Plugin Check is the wp.org submission gate (advisory). Enabled to verify
+      # wp.org-readiness ahead of submission.
+      run-plugin-check: true
