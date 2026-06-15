@@ -57,5 +57,14 @@ final class Plugin
                 $service->registerHooks();
             }
         }
+
+        /**
+         * Fires after Proof has fully booted and all FREE services are
+         * registered. Add-ons (e.g. Proof Pro) listen here to reuse the shared
+         * DI container and register their own hooks.
+         *
+         * @param Plugin $plugin The booted plugin instance.
+         */
+        do_action('proof/booted', $this);
     }
 }

@@ -48,9 +48,19 @@ final class FrontendService implements HasHooks
             return;
         }
 
-        $notifications = $this->feed->notifications();
+        $settings = $this->settings->all();
 
-        if ($notifications === []) {
+        /**
+         * Filters the privacy-safe notification feed before it is sent to the
+         * browser. Add-ons (e.g. Proof Pro) append their own items here, using
+         * the same shape: {name, city, product, time, ts}.
+         *
+         * @param list<array{name:string,city:string,product:string,time:string,ts:int}> $notifications Feed built from recent WooCommerce orders.
+         * @param array<string, mixed>                                                    $settings      Resolved FREE settings.
+         */
+        $notifications = apply_filters('proof/notifications', $this->feed->notifications(), $settings);
+
+        if (! is_array($notifications) || $notifications === []) {
             // Nothing safe to show — load nothing rather than an empty widget.
             return;
         }
