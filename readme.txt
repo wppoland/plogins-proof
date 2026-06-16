@@ -9,84 +9,77 @@ Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Show recent-sale social-proof popups built from real WooCommerce orders. Privacy-safe, accessible, no jQuery, no layout shift.
+Show a small corner popup of recent WooCommerce sales. Real orders only, first name and city only, no jQuery, no layout shift.
 
 == Description ==
 
-Proof shows small, tasteful popups in a corner of the screen that surface recent **real** purchases from your store — for example, "Alex from Berlin bought Hoodie 2 hours ago". Genuine recent activity builds trust and a gentle sense of urgency, without fake numbers.
+Proof shows a small popup in a corner of your storefront that names a recent purchase, for example "Alex from Berlin bought Hoodie 2 hours ago". The popup is built from orders that actually happened, so visitors see real activity rather than invented counters.
 
-**Privacy first.** Each popup only ever shows a customer's **first name** and **billing city** — never surnames, emails, full addresses, order numbers or any other personal data. You can replace a missing first name with a neutral fallback like "Someone".
+Each popup carries only two pieces of customer data: the billing first name and the billing city. Surnames, emails, full addresses and order numbers never leave the server. When an order has no first name, Proof substitutes a word you choose (the default is "Someone").
 
-**Real orders only.** Popups are built from your recent completed and processing WooCommerce orders. There is no fake or invented data; if there are no qualifying orders, Proof simply shows nothing.
+If there are no completed or processing orders in the last 30 days, Proof loads nothing at all. No popup, no script, no empty widget.
 
-**Fast and unobtrusive.**
+The front-end script is plain JavaScript with no dependencies. It loads `defer` in the footer, and the popup sits in a fixed corner so it never reflows the page or adds to Cumulative Layout Shift. The order query runs at most once every five minutes and the result is stored in a transient, so a busy storefront does not re-query orders on every page view.
 
-* **No jQuery.** A tiny vanilla-JavaScript widget, loaded `defer` in the footer.
-* **No layout shift.** The popup is fixed to a screen corner and never reflows page content, so it does not hurt Cumulative Layout Shift.
-* **Cached feed.** The order query runs at most once every few minutes via a transient, never on every page load.
+For screen reader users the popup is a `role="status"` region with `aria-live="polite"`, so each notification is announced without grabbing focus. The dismiss button is a real button with a visible focus ring, focus is never trapped, and the styling follows `prefers-reduced-motion` and `prefers-color-scheme: dark`.
 
-**Accessible.**
+What you can configure under WooCommerce -> Proof:
 
-* The popup lives in an `aria-live="polite"` status region, so screen readers announce each notification without stealing focus.
-* It never traps focus and never blocks page content.
-* A keyboard-focusable dismiss button with a visible focus ring.
-* Motion is reduced automatically when the visitor prefers reduced motion.
-* Dark-mode aware.
+* On/off master switch
+* Which of the four corners the popup appears in
+* The fallback word used when an order has no first name
+* Initial delay before the first popup, how long each popup stays, and the gap between popups
 
-**Features**
+It declares compatibility with WooCommerce High-Performance Order Storage (HPOS) and the Cart and Checkout blocks.
 
-* Recent-sale popups from real WooCommerce orders (completed & processing)
-* Privacy-safe: first name and city only — never surnames, emails or addresses
-* Neutral fallback name for orders with no first name
-* Choose the screen corner (any of the four)
-* Configurable initial delay, display time and interval between popups
-* Clean, dark-mode-aware settings screen under WooCommerce → Proof
-* Compatible with WooCommerce HPOS (Custom Order Tables) and Cart/Checkout Blocks
+Source and issue tracker: the code lives at https://github.com/wppoland/proof. Bug reports and patches are welcome there.
 
 == Installation ==
 
-1. Install and activate WooCommerce (8.0 or later).
-2. Install Proof from the WordPress plugin directory, or upload the `proof` folder to `/wp-content/plugins/`.
-3. Activate the plugin through the **Plugins** screen.
-4. Visit **WooCommerce → Proof** to choose the corner and timing. Sensible defaults work out of the box.
-5. Popups appear automatically once you have qualifying recent orders.
+1. Install and activate WooCommerce 8.0 or later.
+2. Upload the `proof` folder to `/wp-content/plugins/`, or install the zip from Plugins -> Add New -> Upload Plugin.
+3. Activate Proof on the Plugins screen.
+4. Open WooCommerce -> Proof to pick a corner and adjust timing. The defaults are reasonable, so you can leave them as they are.
+5. Once you have completed or processing orders from the last 30 days, popups start appearing on the storefront.
 
 == Frequently Asked Questions ==
 
-= Is Proof free? =
-Yes. Proof is free and licensed under the GPL.
-
-= Does Proof require WooCommerce? =
-Yes. Proof is a WooCommerce extension and requires WooCommerce 8.0 or later. It shows an admin notice and stays inactive if WooCommerce is missing.
-
-= What personal data is shown in a popup? =
-Only a customer's first name and billing city. Surnames, emails, full addresses and order numbers are never exposed to the browser.
-
 = Does it show fake sales? =
-No. Proof only ever shows real orders. If there are no qualifying orders, it shows nothing.
 
-= Which orders are used? =
-Recent orders with the status "completed" or "processing" from roughly the last 30 days, drawn from the 40 most recent qualifying orders.
+No. Every popup comes from a real WooCommerce order. With no qualifying orders, nothing is shown.
 
-= Will it slow down my store or cause layout shift? =
-No. The popup is a small vanilla-JS widget loaded `defer` in the footer, the order data is cached in a transient, and the popup is fixed to a screen corner so it never pushes content around.
+= What customer data ends up in the browser? =
 
-= Is it accessible? =
-Yes. Notifications are announced via an `aria-live` region, the dismiss button is keyboard-accessible with a visible focus ring, focus is never trapped, and animations respect `prefers-reduced-motion`.
+Only the billing first name and billing city. Surnames, emails, addresses and order numbers stay on the server and are never sent to the page.
 
-= How do I remove all plugin data? =
-Deleting the plugin from the **Plugins** screen removes the `proof_settings` and `proof_db_version` options and the cached feed. Proof creates no custom database tables.
+= Which orders does it use? =
+
+Up to the 40 most recent orders with the status "completed" or "processing", limited to roughly the last 30 days.
+
+= Will it slow my store down or shift the layout? =
+
+The script is small, dependency-free, and deferred to the footer; the order data is cached in a transient; and the popup is pinned to a corner, so it does not move other content. There is no measurable layout shift.
+
+= Is it usable with a screen reader or keyboard? =
+
+Yes. Notifications are announced through an `aria-live` region, the dismiss button is keyboard reachable with a visible focus ring, focus is never trapped, and animation is dropped when `prefers-reduced-motion` is set.
+
+= How do I remove everything on uninstall? =
+
+Deleting Proof from the Plugins screen removes its two options (`proof_settings` and `proof_db_version`) and the cached feed. It creates no custom tables and does not touch your order data.
 
 == External Services ==
 
-Proof does not connect to any external services. All data comes from your own WooCommerce orders and stays in your WordPress site.
+Proof does not contact any external service. The popups are built from your own WooCommerce orders and the data stays on your site.
 
 == Screenshots ==
 
 1. A recent-sale popup in the corner of the storefront.
-2. The Proof settings screen under WooCommerce → Proof.
+2. The Proof settings screen under WooCommerce -> Proof.
 
 == Changelog ==
 
 = 0.1.0 =
-* Initial release: privacy-safe recent-sale popups from real WooCommerce orders, with configurable fields, timing, position, scope and frequency cap.
+* First release: corner popups built from recent completed and processing orders, showing first name and city only. Configurable corner, fallback name and timing (delay, display time, interval). HPOS and Cart/Checkout blocks compatible.
+</content>
+</invoke>
