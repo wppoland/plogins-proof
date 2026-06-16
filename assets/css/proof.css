@@ -4,74 +4,114 @@
  * The popup is fixed-position and only ever occupies its own corner, so it
  * never reflows page content (no Cumulative Layout Shift). Motion is opt-out via
  * prefers-reduced-motion. The widget is created and toggled by assets/js/proof.js.
+ *
+ * Treatment: each notification arrives like a printed sales receipt. Proof's job
+ * is to attest a real, on-the-record purchase, so the popup reads as a slip from
+ * a point-of-sale terminal — a perforated tear-edge along the top and an
+ * "approved" green seal pressed beside the line. The accent is the deep ink
+ * green of a verified card transaction, never a default UI blue.
  */
 
 .proof-popup {
-	--proof-bg: #ffffff;
-	--proof-fg: #1e1e1e;
-	--proof-muted: #6b7280;
-	--proof-accent: #2563eb;
+	/* Themeable tokens. Each falls back to the theme's own variable first,
+	   then to a sensible literal, so a storefront can recolour Proof without
+	   touching this file. */
+	--proof-bg: var(--wp--preset--color--base, #fbfbf9);
+	--proof-fg: var(--wp--preset--color--contrast, #1b1f1d);
+	--proof-muted: #5f6b64;
+	--proof-accent: var(--proof-ink, #0f8a5f);
+	--proof-accent-deep: #0a6647;
+	--proof-paper: var(--proof-bg);
+	--proof-perf: color-mix(in srgb, var(--proof-fg) 12%, transparent);
 	--proof-border: rgba(0, 0, 0, 0.08);
-	--proof-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
-	--proof-radius: 12px;
+	--proof-shadow: 0 14px 34px rgba(15, 30, 24, 0.18);
+	--proof-radius: 4px;
 	--proof-gap: 20px;
+	--proof-perf-size: 11px;
 
 	position: fixed;
 	z-index: 99990;
 	display: flex;
 	align-items: center;
-	gap: 12px;
+	gap: 13px;
 	max-width: min(340px, calc(100vw - 32px));
-	padding: 12px 14px;
-	background: var(--proof-bg);
+	/* Extra top padding leaves room for the perforated tear strip. */
+	padding: 18px 15px 13px;
+	background: var(--proof-paper);
 	color: var(--proof-fg);
 	border: 1px solid var(--proof-border);
-	border-radius: var(--proof-radius);
+	border-radius: 0 0 var(--proof-radius) var(--proof-radius);
 	box-shadow: var(--proof-shadow);
 	font-size: 14px;
 	line-height: 1.4;
 	opacity: 0;
 	pointer-events: none;
-	transform: translateY(12px);
-	transition: opacity 0.32s ease, transform 0.32s ease;
+
+	/* Torn top edge — a row of scalloped bites cut from the slip so the page
+	   behind shows through, the way a receipt tears off a register roll. */
+	-webkit-mask:
+		radial-gradient(circle var(--proof-perf-size) at top, transparent 99%, #000 100%) top left / calc(var(--proof-perf-size) * 1.7) 100% repeat-x,
+		linear-gradient(#000 0 0) bottom / 100% calc(100% - var(--proof-perf-size)) no-repeat;
+	mask:
+		radial-gradient(circle var(--proof-perf-size) at top, transparent 99%, #000 100%) top left / calc(var(--proof-perf-size) * 1.7) 100% repeat-x,
+		linear-gradient(#000 0 0) bottom / 100% calc(100% - var(--proof-perf-size)) no-repeat;
+
+	/* The slip prints out from its anchored edge: a vertical scale reveal. */
+	transform: scaleY(0.04);
+	transform-origin: top center;
+	transition: opacity 0.22s ease, transform 0.42s cubic-bezier(0.2, 0.9, 0.25, 1);
+}
+
+/* A faint dotted cut-guide just under the torn edge, like a register's mark. */
+.proof-popup::after {
+	content: "";
+	position: absolute;
+	left: 12px;
+	right: 12px;
+	top: 14px;
+	height: 2px;
+	background: radial-gradient(circle 1px at center, var(--proof-perf) 99%, transparent) left center / 7px 2px repeat-x;
+	pointer-events: none;
 }
 
 .proof-popup.is-visible {
 	opacity: 1;
 	pointer-events: auto;
-	transform: translateY(0);
+	transform: scaleY(1);
 }
 
-/* Corners. */
+/* Corners. Bottom-anchored slips print downward from their top edge; the few
+   pixels of fixed offset never reflow page content. */
 .proof-popup[data-position="bottom-left"]  { bottom: var(--proof-gap); left: var(--proof-gap); }
 .proof-popup[data-position="bottom-right"] { bottom: var(--proof-gap); right: var(--proof-gap); }
 .proof-popup[data-position="top-left"]     { top: var(--proof-gap); left: var(--proof-gap); }
 .proof-popup[data-position="top-right"]    { top: var(--proof-gap); right: var(--proof-gap); }
 
-.proof-popup[data-position="top-left"],
-.proof-popup[data-position="top-right"] {
-	transform: translateY(-12px);
-}
-
-.proof-popup[data-position="top-left"].is-visible,
-.proof-popup[data-position="top-right"].is-visible {
-	transform: translateY(0);
-}
-
 .proof-popup__icon {
 	flex: 0 0 auto;
-	width: 34px;
-	height: 34px;
+	width: 36px;
+	height: 36px;
 	display: grid;
 	place-items: center;
 	border-radius: 50%;
-	background: color-mix(in srgb, var(--proof-accent) 14%, transparent);
-	color: var(--proof-accent);
+	/* The "approved" seal: a ring of accent ink pressed on paper. */
+	color: var(--proof-paper);
+	background: var(--proof-accent);
+	box-shadow:
+		0 0 0 2px var(--proof-paper),
+		0 0 0 3px color-mix(in srgb, var(--proof-accent) 45%, transparent);
+	/* Stamp press: starts a touch large + rotated, settles square. */
+	transform: scale(1.35) rotate(-9deg);
+	transition: transform 0.34s cubic-bezier(0.18, 1.4, 0.4, 1) 0.12s;
+}
+
+.proof-popup.is-visible .proof-popup__icon {
+	transform: scale(1) rotate(0deg);
 }
 
 .proof-popup__icon svg {
-	width: 18px;
-	height: 18px;
+	width: 19px;
+	height: 19px;
 }
 
 .proof-popup__body {
@@ -88,9 +128,14 @@
 
 .proof-popup__time {
 	display: block;
-	margin-top: 2px;
+	margin-top: 3px;
 	color: var(--proof-muted);
-	font-size: 12px;
+	font-size: 11px;
+	/* Receipt-line treatment: monospaced, lightly tracked, like a printed
+	   timestamp at the foot of a slip. */
+	font-family: ui-monospace, "SFMono-Regular", "Menlo", "Consolas", monospace;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
 }
 
 .proof-popup__close {
@@ -118,11 +163,14 @@
 
 @media (prefers-color-scheme: dark) {
 	.proof-popup {
-		--proof-bg: #1f2430;
-		--proof-fg: #f3f4f6;
-		--proof-muted: #9aa3b2;
+		--proof-bg: var(--wp--preset--color--base, #1d2320);
+		--proof-fg: var(--wp--preset--color--contrast, #eef1ee);
+		--proof-muted: #94a39b;
+		--proof-accent: var(--proof-ink, #2ecf94);
+		--proof-accent-deep: #1f9d6f;
+		--proof-perf: color-mix(in srgb, var(--proof-fg) 16%, transparent);
 		--proof-border: rgba(255, 255, 255, 0.1);
-		--proof-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+		--proof-shadow: 0 14px 34px rgba(0, 0, 0, 0.5);
 	}
 }
 
@@ -132,4 +180,9 @@
 		transform: none;
 	}
 	.proof-popup.is-visible { transform: none; }
+	.proof-popup__icon,
+	.proof-popup.is-visible .proof-popup__icon {
+		transition: none;
+		transform: none;
+	}
 }

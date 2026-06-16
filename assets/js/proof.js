@@ -124,7 +124,9 @@
 		var icon = document.createElement( 'span' );
 		icon.className = 'proof-popup__icon';
 		icon.setAttribute( 'aria-hidden', 'true' );
-		icon.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>';
+		// "Approved" seal: a checkmark, like the verified mark a terminal prints
+		// when a real transaction clears.
+		icon.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>';
 
 		var body = document.createElement( 'div' );
 		body.className = 'proof-popup__body';
