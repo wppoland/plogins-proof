@@ -1,6 +1,7 @@
-# Files excluded from the wp.org build. NOTE: /vendor is intentionally NOT
-# ignored — after `composer install --no-dev` it holds the Composer autoloader,
-# which MUST ship. Proof is self-contained: no external runtime dependencies.
+# Files excluded from the wp.org build. Proof is self-contained — it has no
+# runtime Composer dependencies, so /vendor (dev tools only) is excluded; the
+# bundled PSR-4 autoloader in autoload.php loads the plugin's own classes.
+/vendor
 /.git
 /.github
 /.gitignore
