@@ -41,7 +41,7 @@ final class Settings implements HasHooks
     {
         add_submenu_page(
             'woocommerce',
-            __('Proof — Sales Notifications', 'proof'),
+            __('Proof: Sales Notifications', 'proof'),
             __('Proof', 'proof'),
             'manage_woocommerce',
             self::PAGE,
@@ -99,8 +99,8 @@ final class Settings implements HasHooks
         $s = $this->settings->all();
 
         echo '<div class="wrap proof-settings">';
-        echo '<h1>' . esc_html__('Proof — Sales Notifications', 'proof') . '</h1>';
-        echo '<p class="proof-intro">' . esc_html__('Show small popups of recent real purchases to build trust and urgency. Only a first name and city are ever shown — never full names, emails or addresses.', 'proof') . '</p>';
+        echo '<h1>' . esc_html__('Proof: Sales Notifications', 'proof') . '</h1>';
+        echo '<p class="proof-intro">' . esc_html__('Show small popups of recent real purchases to build trust and urgency. Only a first name and city are ever shown, never full names, emails or addresses.', 'proof') . '</p>';
 
         echo '<form action="' . esc_url(admin_url('options.php')) . '" method="post" class="proof-form">';
         settings_fields(self::GROUP);

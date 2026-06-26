@@ -53,8 +53,8 @@ msgstr ""
 "WooCommerce."
 
 #: src/Admin/Settings.php:44 src/Admin/Settings.php:102
-msgid "Proof — Sales Notifications"
-msgstr "Proof — Powiadomienia o sprzedaży"
+msgid "Proof: Sales Notifications"
+msgstr "Proof: Powiadomienia o sprzedaży"
 
 #: src/Admin/Settings.php:45
 msgid "Proof"
@@ -63,11 +63,11 @@ msgstr "Proof"
 #: src/Admin/Settings.php:103
 msgid ""
 "Show small popups of recent real purchases to build trust and urgency. Only "
-"a first name and city are ever shown — never full names, emails or addresses."
+"a first name and city are ever shown, never full names, emails or addresses."
 msgstr ""
 "Wyświetlaj niewielkie wyskakujące powiadomienia o niedawnych prawdziwych "
 "zakupach, aby budować zaufanie i poczucie pilności. Pokazywane są wyłącznie "
-"imię i miasto — nigdy pełne nazwiska, adresy e-mail ani adresy zamieszkania."
+"imię i miasto, nigdy pełne nazwiska, adresy e-mail ani adresy zamieszkania."
 
 #: src/Admin/Settings.php:112
 msgid "Save changes"

@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/Admin/Settings.php:44
 #: src/Admin/Settings.php:102
-msgid "Proof — Sales Notifications"
+msgid "Proof: Sales Notifications"
 msgstr ""
 
 #: src/Admin/Settings.php:45
@@ -53,7 +53,7 @@ msgid "Proof"
 msgstr ""
 
 #: src/Admin/Settings.php:103
-msgid "Show small popups of recent real purchases to build trust and urgency. Only a first name and city are ever shown — never full names, emails or addresses."
+msgid "Show small popups of recent real purchases to build trust and urgency. Only a first name and city are ever shown, never full names, emails or addresses."
 msgstr ""
 
 #: src/Admin/Settings.php:112
