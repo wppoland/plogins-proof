@@ -76,6 +76,11 @@ Yes. Notifications are announced through an `aria-live` region, the dismiss butt
 
 Deleting Proof from the Plugins screen removes its two options (`proof_settings` and `proof_db_version`) and the cached feed. It creates no custom tables and does not touch your order data.
 
+
+= Does this plugin work on WordPress Multisite? =
+
+Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data.
+
 == External Services ==
 
 Proof does not contact any external service. The popups are built from your own WooCommerce orders and the data stays on your site.
