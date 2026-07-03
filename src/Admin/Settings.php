@@ -25,9 +25,16 @@ final class Settings implements HasHooks
 
     private SettingsRepository $settings;
 
+    private ?ProUpsell $proUpsell = null;
+
     public function __construct(SettingsRepository $settings)
     {
         $this->settings = $settings;
+    }
+
+    private function proUpsell(): ProUpsell
+    {
+        return $this->proUpsell ??= new ProUpsell();
     }
 
     public function registerHooks(): void
@@ -35,6 +42,7 @@ final class Settings implements HasHooks
         add_action('admin_menu', [$this, 'addMenuPage']);
         add_action('admin_init', [$this, 'registerSettings']);
         add_action('admin_enqueue_scripts', [$this, 'enqueueAssets']);
+        $this->proUpsell()->registerHooks();
     }
 
     public function addMenuPage(): void
@@ -100,8 +108,12 @@ final class Settings implements HasHooks
 
         echo '<div class="wrap proof-settings">';
         echo '<h1>' . esc_html__('Proof: Sales Notifications', 'plogins-proof') . '</h1>';
+
+        $this->proUpsell()->banner();
+
         echo '<p class="proof-intro">' . esc_html__('Show small popups of recent real purchases to build trust and urgency. Only a first name and city are ever shown, never full names, emails or addresses.', 'plogins-proof') . '</p>';
 
+        echo '<div class="proof-cols">';
         echo '<form action="' . esc_url(admin_url('options.php')) . '" method="post" class="proof-form">';
         settings_fields(self::GROUP);
 
@@ -111,6 +123,11 @@ final class Settings implements HasHooks
 
         submit_button(__('Save changes', 'plogins-proof'));
         echo '</form>';
+
+        $this->proUpsell()->aside();
+        echo '</div>';
+
+        $this->proUpsell()->cards();
         echo '</div>';
     }
 
