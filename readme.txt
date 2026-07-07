@@ -4,7 +4,7 @@ Tags: woocommerce, social proof, sales notification, popup, fomo
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 0.1.1
+Stable tag: 1.0.1
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -91,6 +91,9 @@ Proof does not contact any external service. The popups are built from your own 
 2. The Proof settings screen under WooCommerce -> Proof.
 
 == Changelog ==
+
+= 1.0.1 =
+* First stable release.
 
 = 0.1.1 =
 * Renamed to Plogins Proof for WooCommerce for a more distinctive plugin name.
