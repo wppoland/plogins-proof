@@ -1,0 +1,85 @@
+# wp.org Stable Readme translation (de_DE)
+msgid ""
+msgstr ""
+"Project-Id-Version: proof Stable Readme\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: plogins-i18n\n"
+
+msgid "Requires Plugins: woocommerce"
+msgstr "Erfordert Plugins: woocommerce"
+
+msgid "Show a small corner popup of recent WooCommerce sales. Real orders only, first name and city only, no jQuery, no layout shift."
+msgstr "Zeigt ein kleines Eck-Popup der letzten WooCommerce-Verkäufe an. Nur echte Bestellungen, nur Vorname und Stadt, kein jQuery, keine Layoutverschiebung."
+
+msgid "Proof shows a small popup in a corner of your storefront that names a recent purchase, for example \"Alex from Berlin bought Hoodie 2 hours ago\". The popup is built from orders that actually happened, so visitors see real activity rather than invented counters."
+msgstr "Der Beweis zeigt ein kleines Popup in einer Ecke Ihres Schaufensters, das einen kürzlich getätigten Kauf nennt, zum Beispiel „Alex aus Berlin hat vor 2 Stunden Hoodie gekauft“. Das Popup basiert auf tatsächlich erfolgten Bestellungen, sodass Besucher echte Aktivitäten und keine erfundenen Zähler sehen."
+
+msgid "Each popup carries only two pieces of customer data: the billing first name and the billing city. Surnames, emails, full addresses and order numbers never leave the server. When an order has no first name, Proof substitutes a word you choose (the default is \"Someone\")."
+msgstr "Jedes Popup enthält nur zwei Kundendaten: den Vornamen des Rechnungsstellers und die Stadt des Rechnungsstellers. Nachnamen, E-Mail-Adressen, vollständige Adressen und Bestellnummern verlassen niemals den Server. Wenn eine Bestellung keinen Vornamen hat, ersetzt Proof ein von dir ausgewähltes Wort (die Standardeinstellung ist „Jemand“)."
+
+msgid "If there are no completed or processing orders in the last 30 days, Proof loads nothing at all. No popup, no script, no empty widget."
+msgstr "Wenn in den letzten 30 Tagen keine abgeschlossenen oder bearbeiteten Bestellungen vorliegen, lädt Proof überhaupt nichts. Kein Popup, kein Skript, kein leeres Widget."
+
+msgid "The front-end script is plain JavaScript with no dependencies. It loads `defer` in the footer, and the popup sits in a fixed corner so it never reflows the page or adds to Cumulative Layout Shift. The order query runs at most once every five minutes and the result is stored in a transient, so a busy storefront does not re-query orders on every page view."
+msgstr "Das Frontend-Skript ist einfaches JavaScript ohne Abhängigkeiten. Es lädt „defer“ in die Fußzeile und das Popup befindet sich in einer festen Ecke, sodass die Seite nie neu umbrochen oder zur kumulativen Layoutverschiebung hinzugefügt wird. Die Bestellabfrage wird höchstens einmal alle fünf Minuten ausgeführt und das Ergebnis wird in einem Transienten gespeichert, sodass eine stark ausgelastete Storefront nicht bei jedem Seitenaufruf erneut Bestellungen abfragt."
+
+msgid "For screen reader users the popup is a `role=\"status\"` region with `aria-live=\"polite\"`, so each notification is announced without grabbing focus. The dismiss button is a real button with a visible focus ring, focus is never trapped, and the styling follows `prefers-reduced-motion` and `prefers-color-scheme: dark`."
+msgstr "Für Benutzer von Bildschirmleseprogrammen ist das Popup ein „role=\"status\"“-Bereich mit „aria-live=\"polite\"`, sodass jede Benachrichtigung angekündigt wird, ohne den Fokus zu greifen. Die Schaltfläche zum Verwerfen ist eine echte Schaltfläche mit einem sichtbaren Fokusring, der Fokus wird niemals blockiert und das Design folgt „bevorzugt reduzierte Bewegung“ und „bevorzugt Farbschema: dunkel“."
+
+msgid "What you can configure under WooCommerce -> Proof:"
+msgstr "Was du unter WooCommerce -> Proof konfigurieren können:"
+
+msgid "* On/off master switch\n* Which of the four corners the popup appears in\n* The fallback word used when an order has no first name\n* Initial delay before the first popup, how long each popup stays, and the gap between popups"
+msgstr "* Ein/Aus-Hauptschalter\n* In welcher der vier Ecken das Popup erscheint\n* Das Ersatzwort, das verwendet wird, wenn eine Bestellung keinen Vornamen hat\n* Anfängliche Verzögerung vor dem ersten Popup, wie lange jedes Popup bleibt und die Lücke zwischen den Popups"
+
+msgid "It declares compatibility with WooCommerce High-Performance Order Storage (HPOS) and the Cart and Checkout blocks."
+msgstr "Es erklärt die Kompatibilität mit WooCommerce High-Performance Order Storage (HPOS) und den Cart- und Checkout-Blöcken."
+
+msgid "Source and issue tracker: the code lives at https://github.com/wppoland/plogins-proof. Bug reports and patches are welcome there."
+msgstr "Quellen- und Problemverfolgung: Der Code befindet sich unter https://github.com/wppoland/plogins-proof. Dort sind Fehlerberichte und Patches willkommen."
+
+msgid "1. Install and activate WooCommerce 8.0 or later.\n2. Upload the `proof` folder to `/wp-content/plugins/`, or install the zip from Plugins -> Add New -> Upload Plugin.\n3. Activate Proof on the Plugins screen.\n4. Open WooCommerce -> Proof to pick a corner and adjust timing. The defaults are reasonable, so you can leave them as they are.\n5. Once you have completed or processing orders from the last 30 days, popups start appearing on the storefront."
+msgstr "1. Installieren und aktiviere WooCommerce 8.0 oder höher.\n2. Lade den Ordner „proof“ nach „/wp-content/plugins/“ hoch oder installiere die ZIP-Datei über Plugins -> Neu hinzufügen -> Plugin hochladen.\n3. Aktiviere Proof auf dem Plugins-Bildschirm.\n4. Öffne WooCommerce -> Proof, um eine Ecke auszuwählen und das Timing anzupassen. Die Standardeinstellungen sind angemessen, Du kannst sie also so belassen, wie sie sind.\n5. Sobald Sie Bestellungen der letzten 30 Tage abgeschlossen oder bearbeitet haben, erscheinen Popups im Storefront."
+
+msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-proof/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-proof/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-proof\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-proof/issues"
+msgstr "* <strong>Dokumentation</strong> - https://plogins.com/de/plogins-proof/docs/\n* <strong>Plugin-Seite</strong> - https://plogins.com/de/plogins-proof/\n* <strong>Quellcode</strong> – https://github.com/wppoland/plogins-proof\n* <strong>Fehlerberichte und Funktionsanfragen</strong> – https://github.com/wppoland/plogins-proof/issues"
+
+msgid "No. Every popup comes from a real WooCommerce order. With no qualifying orders, nothing is shown."
+msgstr "Nein. Jedes Popup stammt aus einer echten WooCommerce-Bestellung. Wenn keine qualifizierten Bestellungen vorliegen, wird nichts angezeigt."
+
+msgid "Only the billing first name and billing city. Surnames, emails, addresses and order numbers stay on the server and are never sent to the page."
+msgstr "Nur der Vorname und der Ort der Rechnungsstellung. Nachnamen, E-Mail-Adressen, Adressen und Bestellnummern bleiben auf dem Server und werden niemals an die Seite gesendet."
+
+msgid "Up to the 40 most recent orders with the status \"completed\" or \"processing\", limited to roughly the last 30 days."
+msgstr "Bis zu den 40 aktuellsten Bestellungen mit dem Status „abgeschlossen“ oder „in Bearbeitung“, begrenzt auf etwa die letzten 30 Tage."
+
+msgid "The script is small, dependency-free, and deferred to the footer; the order data is cached in a transient; and the popup is pinned to a corner, so it does not move other content. There is no measurable layout shift."
+msgstr "Das Skript ist klein, unabhängig von Abhängigkeiten und wird in die Fußzeile verschoben. die Bestelldaten werden transient zwischengespeichert; und das Popup wird an eine Ecke angeheftet, sodass andere Inhalte nicht verschoben werden. Es gibt keine messbare Layoutverschiebung."
+
+msgid "Yes. Notifications are announced through an `aria-live` region, the dismiss button is keyboard reachable with a visible focus ring, focus is never trapped, and animation is dropped when `prefers-reduced-motion` is set."
+msgstr "Ja. Benachrichtigungen werden über einen „Aria-Live“-Bereich angekündigt, die Schaltfläche zum Verwerfen ist über die Tastatur mit einem sichtbaren Fokusring erreichbar, der Fokus wird niemals gefangen und die Animation wird gelöscht, wenn „Prefers-Reduced-Motion“ eingestellt ist."
+
+msgid "Deleting Proof from the Plugins screen removes its two options (`proof_settings` and `proof_db_version`) and the cached feed. It creates no custom tables and does not touch your order data."
+msgstr "Durch das Löschen von Proof aus dem Plugins-Bildschirm werden seine beiden Optionen („proof_settings“ und „proof_db_version“) sowie der zwischengespeicherte Feed entfernt. Es werden keine benutzerdefinierten Tabellen erstellt und deine Bestelldaten werden nicht berührt."
+
+msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
+msgstr "Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es im Netzwerk oder auf einzelnen Websites. Jede Site behält ihre eigenen Einstellungen und Daten."
+
+msgid "Proof does not contact any external service. The popups are built from your own WooCommerce orders and the data stays on your site."
+msgstr "Der Nachweis kontaktiert keinen externen Dienst. Die Popups werden aus deinen eigenen WooCommerce-Bestellungen erstellt und die Daten verbleiben auf deiner Website."
+
+msgid "1. A recent-sale popup in the corner of the storefront.\n2. The Proof settings screen under WooCommerce -> Proof."
+msgstr "1. Ein Popup mit aktuellen Angeboten in der Ecke des Ladens.\n2. Der Proof-Einstellungsbildschirm unter WooCommerce -> Proof."
+
+msgid "* First stable release."
+msgstr "* Erste stabile Version."
+
+msgid "* Renamed to Plogins Proof for WooCommerce for a more distinctive plugin name."
+msgstr "* Für einen eindeutigeren Plugin-Namen in Plogins Proof für WooCommerce umbenannt."
+
+msgid "* First release: corner popups built from recent completed and processing orders, showing first name and city only. Configurable corner, fallback name and timing (delay, display time, interval). HPOS and Cart/Checkout blocks compatible.\n</content>\n</invoke>"
+msgstr "* Erste Veröffentlichung: Eck-Popups, die aus kürzlich abgeschlossenen und bearbeiteten Bestellungen erstellt wurden und nur den Vornamen und die Stadt anzeigen. Konfigurierbare Ecke, Fallback-Name und Timing (Verzögerung, Anzeigezeit, Intervall). HPOS- und Cart/Checkout-Blöcke kompatibel.\n</content>\n</invoke>"
+

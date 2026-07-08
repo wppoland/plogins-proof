@@ -1,0 +1,231 @@
+# Copyright (C) 2026 WPPoland
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Proof - Sales Notifications for WooCommerce 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/proof\n"
+"POT-Creation-Date: 2026-06-16T20:24:00+00:00\n"
+"PO-Revision-Date: 2026-06-16T20:24:00+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: plogins-proof\n"
+"X-Generator: WP-CLI 2.12.0\n"
+
+#. Plugin Name of the plugin
+#: plogins-proof.php
+msgid "Proof - Sales Notifications for WooCommerce"
+msgstr "Proof - Notificaciones de ventas para WooCommerce"
+
+#. Plugin URI of the plugin
+#: plogins-proof.php
+msgid "https://plogins.com/proof/"
+msgstr "https://plogins.com/es/proof/"
+
+#. Description of the plugin
+#: plogins-proof.php
+msgid "Show recent-sale social-proof popups to build trust and urgency."
+msgstr ""
+"Muestre ventanas emergentes de prueba social de ventas recientes para "
+"generar confianza y urgencia."
+
+#. Author of the plugin
+#: plogins-proof.php
+msgid "WPPoland"
+msgstr "WPPoland"
+
+#. Author URI of the plugin
+#: plogins-proof.php
+msgid "https://plogins.com/"
+msgstr "https://plogins.com/"
+
+#: plogins-proof.php:48
+msgid ""
+"Proof - Sales Notifications for WooCommerce requires WooCommerce to be "
+"active."
+msgstr ""
+"Proof - Notificaciones de ventas para WooCommerce requiere que WooCommerce "
+"esté activo."
+
+#: src/Admin/Settings.php:44 src/Admin/Settings.php:102
+msgid "Proof: Sales Notifications"
+msgstr "Proof: Notificaciones de ventas"
+
+#: src/Admin/Settings.php:45
+msgid "Proof"
+msgstr "Proof"
+
+#: src/Admin/Settings.php:103
+msgid ""
+"Show small popups of recent real purchases to build trust and urgency. Only "
+"a first name and city are ever shown, never full names, emails or addresses."
+msgstr ""
+"Muestre pequeñas ventanas emergentes de compras reales recientes para "
+"generar confianza y urgencia. Sólo se muestran el nombre y la ciudad, nunca "
+"nombres completos, correos electrónicos o direcciones."
+
+#: src/Admin/Settings.php:112
+msgid "Save changes"
+msgstr "Guardar cambios"
+
+#: src/Admin/Settings.php:123
+msgid "General"
+msgstr "General"
+
+#: src/Admin/Settings.php:128
+msgid "Enable Proof"
+msgstr "Habilitar Proof"
+
+#: src/Admin/Settings.php:129
+msgid ""
+"Master switch. When off, no popups are loaded or rendered anywhere on the "
+"storefront."
+msgstr ""
+"Interruptor maestro. Cuando está desactivado, no se cargan ni muestran "
+"ventanas emergentes en ninguna parte del escaparate."
+
+#: src/Admin/Settings.php:135
+msgid "Screen corner"
+msgstr "Esquina de la pantalla"
+
+#: src/Admin/Settings.php:137
+msgid "Bottom left"
+msgstr "Abajo a la izquierda"
+
+#: src/Admin/Settings.php:138
+msgid "Bottom right"
+msgstr "Abajo a la derecha"
+
+#: src/Admin/Settings.php:139
+msgid "Top left"
+msgstr "Arriba a la izquierda"
+
+#: src/Admin/Settings.php:140
+msgid "Top right"
+msgstr "Arriba a la derecha"
+
+#: src/Admin/Settings.php:143
+msgid "Which corner of the screen the popup slides in from."
+msgstr "Desde qué esquina de la pantalla se desliza la ventana emergente."
+
+#: src/Admin/Settings.php:156
+msgid "What each popup shows"
+msgstr "Qué muestra cada ventana emergente"
+
+#: src/Admin/Settings.php:157
+msgid ""
+"Each popup shows the buyer's first name, billing city, the product name and "
+"how long ago the purchase happened. Surnames, emails and full addresses are "
+"never shown."
+msgstr ""
+"Cada ventana emergente muestra el nombre del comprador, la ciudad de "
+"facturación, el nombre del producto y cuánto tiempo hace que se realizó la "
+"compra. Nunca se muestran apellidos, correos electrónicos y direcciones "
+"completas."
+
+#: src/Admin/Settings.php:165
+msgid "Fallback name"
+msgstr "Nombre alternativo"
+
+#. translators: %s is the default fallback word shown when an order has no
+#. first name.
+#: src/Admin/Settings.php:168
+#, php-format
+msgid ""
+"Shown in place of a first name when the order has none. Leave blank to use "
+"the default, %s."
+msgstr ""
+"Se muestra en lugar de un nombre cuando el pedido no lo tiene. Déjelo en "
+"blanco para usar el valor predeterminado, %s."
+
+#: src/Admin/Settings.php:181
+msgid "Timing"
+msgstr "Tiempos"
+
+#: src/Admin/Settings.php:184
+msgid "Initial delay (seconds)"
+msgstr "Retraso inicial (segundos)"
+
+#: src/Admin/Settings.php:184
+msgid ""
+"How long to wait after the page loads before the first popup appears. "
+"Default 5 seconds."
+msgstr ""
+"Cuánto tiempo esperar después de que se carga la página antes de que "
+"aparezca la primera ventana emergente. Por defecto 5 segundos."
+
+#: src/Admin/Settings.php:185
+msgid "Display time (seconds)"
+msgstr "Tiempo de visualización (segundos)"
+
+#: src/Admin/Settings.php:185
+msgid ""
+"How long each popup stays on screen before sliding away. Default 6 seconds."
+msgstr ""
+"Cuánto tiempo permanece cada ventana emergente en la pantalla antes de "
+"desaparecer. Por defecto 6 segundos."
+
+#: src/Admin/Settings.php:186
+msgid "Interval between popups (seconds)"
+msgstr "Intervalo entre ventanas emergentes (segundos)"
+
+#: src/Admin/Settings.php:186
+msgid ""
+"Gap between one popup disappearing and the next appearing. Lower values show"
+" more popups; higher values feel calmer. Default 12 seconds."
+msgstr ""
+"Brecha entre la desaparición de una ventana emergente y la aparición de la "
+"siguiente. Los valores más bajos muestran más ventanas emergentes; Los "
+"valores más altos se sienten más tranquilos. Por defecto 12 segundos."
+
+#: src/Admin/Settings.php:199
+msgid "Example"
+msgstr "Ejemplo"
+
+#: src/Admin/Settings.php:206
+msgid "Alex from Berlin"
+msgstr "Alex de Berlín"
+
+#: src/Admin/Settings.php:206
+msgid "bought Merino Hoodie"
+msgstr "compró sudadera con capucha Merino"
+
+#: src/Admin/Settings.php:207
+msgid "2 hours ago"
+msgstr "hace 2 horas"
+
+#: src/Admin/Settings.php:224
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: src/Service/FrontendService.php:87
+msgid "Recent purchase"
+msgstr "Compra reciente"
+
+#: src/Service/FrontendService.php:88
+msgid "Dismiss notification"
+msgstr "Descartar notificación"
+
+#. translators: connects a name to a city, e.g. "Alex from Berlin".
+#: src/Service/FrontendService.php:90
+msgid "from"
+msgstr "de"
+
+#. translators: connects a buyer to a product, e.g. "bought Hoodie".
+#: src/Service/FrontendService.php:92
+msgid "bought"
+msgstr "compró"
+
+#: src/Service/OrderFeed.php:124
+msgid "Someone"
+msgstr "alguien"
+
+#. translators: %s: human-readable time difference, e.g. "2 hours".
+#: src/Service/OrderFeed.php:171
+#, php-format
+msgid "%s ago"
+msgstr "Hace %s"
