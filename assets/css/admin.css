@@ -124,23 +124,3 @@
 	outline: 2px solid #2271b1;
 	outline-offset: 1px;
 }
-
-@media (prefers-color-scheme: dark) {
-	.proof-settings {
-		--proof-card-bg: #1e2127;
-		--proof-card-border: #3c434a;
-		--proof-card-fg: #e0e0e0;
-		--proof-card-muted: #a7aaad;
-		/* Lighter mint for dark surfaces (matches the storefront's dark accent):
-		   #2ecf94 → 8.04:1 on the #1e2127 card (AA text, well clear). */
-		--proof-accent: #2ecf94;
-	}
-
-	.proof-settings .proof-preview__seal {
-		color: #06241a;
-	}
-
-	.proof-settings .proof-card {
-		color: var(--proof-card-fg);
-	}
-}
