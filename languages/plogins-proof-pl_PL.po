@@ -12,7 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
 "X-Domain: plogins-proof\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
@@ -130,8 +131,7 @@ msgstr ""
 msgid "Fallback name"
 msgstr "Nazwa zastępcza"
 
-#. translators: %s is the default fallback word shown when an order has no
-#. first name.
+#. translators: %s is the default fallback word shown when an order has no first name.
 #: src/Admin/Settings.php:168
 #, php-format
 msgid ""
@@ -174,8 +174,8 @@ msgstr "Odstęp między powiadomieniami (sekundy)"
 
 #: src/Admin/Settings.php:186
 msgid ""
-"Gap between one popup disappearing and the next appearing. Lower values show"
-" more popups; higher values feel calmer. Default 12 seconds."
+"Gap between one popup disappearing and the next appearing. Lower values show "
+"more popups; higher values feel calmer. Default 12 seconds."
 msgstr ""
 "Przerwa między zniknięciem jednego wyskakującego okienka a pojawieniem się "
 "następnego. Niższe wartości pokazują więcej wyskakujących okienek; wyższe "
@@ -230,9 +230,10 @@ msgid "%s ago"
 msgstr "%s temu"
 
 #~ msgid ""
-#~ "Each popup shows the buyer's first name, billing city, the product name and "
-#~ "how long ago the purchase happened — for example \"Alex from Berlin bought "
-#~ "Hoodie 2 hours ago\". Surnames, emails and full addresses are never shown."
+#~ "Each popup shows the buyer's first name, billing city, the product name "
+#~ "and how long ago the purchase happened — for example \"Alex from Berlin "
+#~ "bought Hoodie 2 hours ago\". Surnames, emails and full addresses are "
+#~ "never shown."
 #~ msgstr ""
 #~ "Każde powiadomienie wyświetla imię kupującego, miasto z danych "
 #~ "rozliczeniowych, nazwę produktu oraz jak dawno temu nastąpił zakup — na "
@@ -246,7 +247,8 @@ msgstr "%s temu"
 #~ "Wyświetlana zamiast imienia, gdy zamówienie go nie zawiera. Domyślnie "
 #~ "„Ktoś”."
 
-#~ msgid "How long to wait after the page loads before the first popup appears."
+#~ msgid ""
+#~ "How long to wait after the page loads before the first popup appears."
 #~ msgstr ""
 #~ "Jak długo czekać po wczytaniu strony, zanim pojawi się pierwsze "
 #~ "powiadomienie."

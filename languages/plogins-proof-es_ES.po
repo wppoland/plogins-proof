@@ -131,8 +131,7 @@ msgstr ""
 msgid "Fallback name"
 msgstr "Nombre alternativo"
 
-#. translators: %s is the default fallback word shown when an order has no
-#. first name.
+#. translators: %s is the default fallback word shown when an order has no first name.
 #: src/Admin/Settings.php:168
 #, php-format
 msgid ""
@@ -175,8 +174,8 @@ msgstr "Intervalo entre ventanas emergentes (segundos)"
 
 #: src/Admin/Settings.php:186
 msgid ""
-"Gap between one popup disappearing and the next appearing. Lower values show"
-" more popups; higher values feel calmer. Default 12 seconds."
+"Gap between one popup disappearing and the next appearing. Lower values show "
+"more popups; higher values feel calmer. Default 12 seconds."
 msgstr ""
 "Brecha entre la desaparición de una ventana emergente y la aparición de la "
 "siguiente. Los valores más bajos muestran más ventanas emergentes; Los "

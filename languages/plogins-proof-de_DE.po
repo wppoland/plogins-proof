@@ -131,16 +131,15 @@ msgstr ""
 msgid "Fallback name"
 msgstr "Fallback-Name"
 
-#. translators: %s is the default fallback word shown when an order has no
-#. first name.
+#. translators: %s is the default fallback word shown when an order has no first name.
 #: src/Admin/Settings.php:168
 #, php-format
 msgid ""
 "Shown in place of a first name when the order has none. Leave blank to use "
 "the default, %s."
 msgstr ""
-"Wird anstelle eines Vornamens angezeigt, wenn die Bestellung keinen enthält."
-" Lass das Feld leer, um den Standardwert %s zu verwenden."
+"Wird anstelle eines Vornamens angezeigt, wenn die Bestellung keinen enthält. "
+"Lass das Feld leer, um den Standardwert %s zu verwenden."
 
 #: src/Admin/Settings.php:181
 msgid "Timing"
@@ -175,8 +174,8 @@ msgstr "Intervall zwischen Popups (Sekunden)"
 
 #: src/Admin/Settings.php:186
 msgid ""
-"Gap between one popup disappearing and the next appearing. Lower values show"
-" more popups; higher values feel calmer. Default 12 seconds."
+"Gap between one popup disappearing and the next appearing. Lower values show "
+"more popups; higher values feel calmer. Default 12 seconds."
 msgstr ""
 "Lücke zwischen dem Verschwinden eines Popups und dem Erscheinen des "
 "nächsten. Niedrigere Werte zeigen mehr Popups an; Höhere Werte fühlen sich "
