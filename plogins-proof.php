@@ -15,6 +15,7 @@
  * Text Domain:       plogins-proof
  * Domain Path:       /languages
  * WC requires at least: 8.0
+ * WC tested up to: 10.9
  *
  * @package Proof
  */
