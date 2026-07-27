@@ -124,3 +124,83 @@
 	outline: 2px solid #2271b1;
 	outline-offset: 1px;
 }
+
+/* ------------------------------------------------------------------ *
+ * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * locked cards. Pure advertising (no disabled inputs), scoped entirely
+ * to .proof-settings. The accent (#0a6647) clears WCAG AA for white
+ * button text (6.99:1 on white) so it doubles as the CTA background.
+ * ------------------------------------------------------------------ */
+
+.proof-settings {
+	--proof-pro-accent: var(--proof-accent);
+	--proof-pro-muted: #646970;
+	--proof-pro-radius: 8px;
+	--proof-pro-radius-sm: 6px;
+	--proof-pro-gap: 20px;
+}
+
+/* Two-column wrapper (form + promo aside); single column on narrow screens. */
+.proof-settings .proof-cols { display: grid; gap: var(--proof-pro-gap); grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 1100px) {
+	.proof-settings .proof-cols { grid-template-columns: minmax(0, 1fr) 300px; }
+}
+
+/* Top banner */
+.proof-settings .proof-pro-banner {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin: 1em 0 var(--proof-pro-gap);
+	padding: 12px 16px;
+	border: 1px solid color-mix(in srgb, var(--proof-pro-accent) 30%, #dcdcde);
+	border-inline-start: 4px solid var(--proof-pro-accent);
+	border-radius: var(--proof-pro-radius);
+	background: color-mix(in srgb, var(--proof-pro-accent) 7%, #fff);
+}
+.proof-settings .proof-pro-banner__tag,
+.proof-settings .proof-pro-card__badge,
+.proof-settings .proof-pro-aside__eyebrow {
+	font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+}
+.proof-settings .proof-pro-banner__tag { flex: 0 0 auto; padding: 2px 8px; border-radius: 999px; color: #fff; background: var(--proof-pro-accent); }
+.proof-settings .proof-pro-banner__text { flex: 1 1 auto; margin: 0; color: #1d2327; }
+.proof-settings .proof-pro-banner__sub { margin-inline-start: 4px; color: var(--proof-pro-muted); }
+.proof-settings .proof-pro-banner__price { margin-inline-start: 6px; color: var(--proof-pro-muted); font-weight: 600; white-space: nowrap; }
+.proof-settings .proof-pro-banner__dismiss { flex: 0 0 auto; font-size: 18px; line-height: 1; text-decoration: none; color: var(--proof-pro-muted); padding: 4px; border-radius: 4px; }
+.proof-settings .proof-pro-banner__dismiss:hover { color: #1d2327; background: rgba(0, 0, 0, .05); }
+
+/* Accent CTA buttons (override WP blue with the readable dark accent) */
+.proof-settings .proof-pro-banner__cta.button-primary,
+.proof-settings .proof-pro-aside__cta.button-primary {
+	background: var(--proof-pro-accent); border-color: color-mix(in srgb, var(--proof-pro-accent) 80%, #000); color: #fff; text-shadow: none; box-shadow: none;
+}
+.proof-settings .proof-pro-banner__cta.button-primary:hover,
+.proof-settings .proof-pro-aside__cta.button-primary:hover { background: color-mix(in srgb, var(--proof-pro-accent) 88%, #000); }
+
+/* Sidebar promo card */
+.proof-settings .proof-pro-aside {
+	background: #fff; border: 1px solid #dcdcde; border-top: 3px solid var(--proof-pro-accent); border-radius: var(--proof-pro-radius); padding: 18px 20px; position: sticky; top: 40px;
+}
+.proof-settings .proof-pro-aside__eyebrow { margin: 0 0 4px; color: var(--proof-pro-accent); }
+.proof-settings .proof-pro-aside__heading { margin: 0 0 12px; font-size: 16px; line-height: 1.3; color: #1d2327; }
+.proof-settings .proof-pro-aside__list { margin: 0 0 16px; padding: 0; list-style: none; }
+.proof-settings .proof-pro-aside__list li { display: flex; align-items: flex-start; gap: 8px; padding: 5px 0; color: #1d2327; font-size: 13px; }
+.proof-settings .proof-pro-aside__lock::before,
+.proof-settings .proof-pro-card__lock::before { content: "\f160"; font-family: dashicons; font-size: 15px; line-height: 1.2; color: var(--proof-pro-accent); }
+.proof-settings .proof-pro-aside__cta { width: 100%; text-align: center; }
+.proof-settings .proof-pro-aside__price { margin: 10px 0 0; font-size: 12px; color: var(--proof-pro-muted); text-align: center; }
+
+/* "What PRO adds" locked cards */
+.proof-settings .proof-pro-cards { max-width: 60rem; margin: var(--proof-pro-gap) 0 0; }
+.proof-settings .proof-pro-cards__title { font-size: 15px; margin: 0 0 12px; color: #1d2327; }
+.proof-settings .proof-pro-cards__grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.proof-settings .proof-pro-card { position: relative; padding: 16px; border: 1px solid #dcdcde; border-radius: var(--proof-pro-radius-sm); background: color-mix(in srgb, var(--proof-pro-accent) 3%, #fff); }
+.proof-settings .proof-pro-card__badge { position: absolute; top: 12px; inset-inline-end: 12px; padding: 1px 7px; border-radius: 999px; color: var(--proof-pro-accent); border: 1px solid color-mix(in srgb, var(--proof-pro-accent) 40%, #fff); }
+.proof-settings .proof-pro-card__lock { display: inline-block; margin-bottom: 6px; }
+.proof-settings .proof-pro-card__title { margin: 0 0 6px; font-size: 14px; line-height: 1.3; color: #1d2327; }
+.proof-settings .proof-pro-card__desc { margin: 0; font-size: 12.5px; line-height: 1.5; color: var(--proof-pro-muted); }
+
+@media (prefers-reduced-motion: no-preference) {
+	.proof-settings .proof-pro-banner__cta, .proof-settings .proof-pro-aside__cta { transition: background-color .15s ease, border-color .15s ease; }
+}
