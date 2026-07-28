@@ -16,7 +16,7 @@ defined('ABSPATH') || exit;
  * and timing config to the browser.
  *
  * Renders nothing when disabled, out of scope, or when there are no safe
- * notifications to show — never broken markup, never a fatal.
+ * notifications to show, never broken markup, never a fatal.
  */
 final class FrontendService implements HasHooks
 {
@@ -40,7 +40,7 @@ final class FrontendService implements HasHooks
     }
 
     /**
-     * Enqueue assets and localise data — only when everything lines up.
+     * Enqueue assets and localise data, only when everything lines up.
      */
     public function enqueueAssets(): void
     {
@@ -61,7 +61,7 @@ final class FrontendService implements HasHooks
         $notifications = apply_filters('proof/notifications', $this->feed->notifications(), $settings);
 
         if (! is_array($notifications) || $notifications === []) {
-            // Nothing safe to show — load nothing rather than an empty widget.
+            // Nothing safe to show, load nothing rather than an empty widget.
             return;
         }
 

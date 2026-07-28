@@ -3,7 +3,7 @@
  * Default settings, merged under the option key `proof_settings`.
  *
  * Proof shows privacy-safe social-proof popups built from recent real
- * WooCommerce orders. Only a first name and a city are ever displayed — never
+ * WooCommerce orders. Only a first name and a city are ever displayed, never
  * full names, emails or addresses. When there are no qualifying real orders,
  * Proof shows nothing.
  *

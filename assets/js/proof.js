@@ -1,5 +1,5 @@
 /**
- * Proof — recent-sale social-proof popup (vanilla JS, no dependencies).
+ * Proof, recent-sale social-proof popup (vanilla JS, no dependencies).
  *
  * Rotates through a privacy-safe list of recent purchases supplied by PHP via
  * the `proofData` global. Respects an initial delay, a per-popup display time

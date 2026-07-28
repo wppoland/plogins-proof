@@ -1,4 +1,4 @@
-# Files excluded from the wp.org build. Proof is self-contained — it has no
+# Files excluded from the wp.org build. Proof is self-contained, it has no
 # runtime Composer dependencies, so /vendor (dev tools only) is excluded; the
 # bundled PSR-4 autoloader in autoload.php loads the plugin's own classes.
 /vendor

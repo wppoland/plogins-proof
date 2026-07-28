@@ -11,7 +11,7 @@ defined('ABSPATH') || exit;
 /**
  * Idempotent version migrations, run on every boot. Compares a stored option
  * against VERSION and applies forward steps as needed. Proof stores no custom
- * tables — it reads live WooCommerce orders — so migration only seeds the
+ * tables, it reads live WooCommerce orders, so migration only seeds the
  * default settings once.
  */
 final class Migrator

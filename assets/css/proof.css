@@ -1,5 +1,5 @@
 /**
- * Proof — recent-sale social-proof popup.
+ * Proof, recent-sale social-proof popup.
  *
  * The popup is fixed-position and only ever occupies its own corner, so it
  * never reflows page content (no Cumulative Layout Shift). Motion is opt-out via
@@ -7,7 +7,7 @@
  *
  * Treatment: each notification arrives like a printed sales receipt. Proof's job
  * is to attest a real, on-the-record purchase, so the popup reads as a slip from
- * a point-of-sale terminal — a perforated tear-edge along the top and an
+ * a point-of-sale terminal, a perforated tear-edge along the top and an
  * "approved" green seal pressed beside the line. The accent is the deep ink
  * green of a verified card transaction, never a default UI blue.
  */
@@ -47,7 +47,7 @@
 	opacity: 0;
 	pointer-events: none;
 
-	/* Torn top edge — a row of scalloped bites cut from the slip so the page
+	/* Torn top edge, a row of scalloped bites cut from the slip so the page
 	   behind shows through, the way a receipt tears off a register roll. */
 	-webkit-mask:
 		radial-gradient(circle var(--proof-perf-size) at top, transparent 99%, #000 100%) top left / calc(var(--proof-perf-size) * 1.7) 100% repeat-x,

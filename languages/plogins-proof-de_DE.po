@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: plogins-proof.php
 msgid "Proof - Sales Notifications for WooCommerce"
-msgstr "Proof – Verkaufsbenachrichtigungen für WooCommerce"
+msgstr "Proof, Verkaufsbenachrichtigungen für WooCommerce"
 
 #. Plugin URI of the plugin
 #: plogins-proof.php
@@ -48,7 +48,7 @@ msgid ""
 "Proof - Sales Notifications for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Proof – Verkaufsbenachrichtigungen für WooCommerce erfordert, dass "
+"Proof, Verkaufsbenachrichtigungen für WooCommerce erfordert, dass "
 "WooCommerce aktiv ist."
 
 #: src/Admin/Settings.php:44 src/Admin/Settings.php:102

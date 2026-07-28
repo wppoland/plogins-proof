@@ -1,5 +1,5 @@
 /**
- * Proof — admin settings screen styling. Card-based layout, dark-mode aware via
+ * Proof, admin settings screen styling. Card-based layout, dark-mode aware via
  * prefers-color-scheme, accessible focus states.
  */
 
@@ -28,7 +28,7 @@
 	padding: 8px 22px 18px;
 	background: var(--proof-card-bg);
 	border: 1px solid var(--proof-card-border);
-	/* Slim accent rail down the leading edge — the one restrained brand touch,
+	/* Slim accent rail down the leading edge, the one restrained brand touch,
 	   tying each section back to the storefront slip without shouting. */
 	border-left: 3px solid var(--proof-accent);
 	border-radius: var(--proof-card-radius);
@@ -58,7 +58,7 @@
 }
 
 /* Static example slip: a calmer echo of the live storefront receipt so admins
-   recognise exactly what ships. Not interactive — purely illustrative. */
+   recognise exactly what ships. Not interactive, purely illustrative. */
 .proof-settings .proof-preview {
 	margin: 4px 0 0;
 }
@@ -126,7 +126,7 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
  * locked cards. Pure advertising (no disabled inputs), scoped entirely
  * to .proof-settings. The accent (#0a6647) clears WCAG AA for white
  * button text (6.99:1 on white) so it doubles as the CTA background.

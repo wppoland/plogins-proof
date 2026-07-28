@@ -10,7 +10,7 @@ defined('ABSPATH') || exit;
  * Builds a privacy-safe list of recent-sale notifications from real WooCommerce
  * orders.
  *
- * PRIVACY: only a customer's first name and billing city are ever exposed —
+ * PRIVACY: only a customer's first name and billing city are ever exposed, 
  * never the surname, email, full address, order id or any other PII. The
  * payload returned by {@see self::notifications()} is the exact data sent to the
  * browser, so it is deliberately minimal.

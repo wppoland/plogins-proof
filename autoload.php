@@ -2,7 +2,7 @@
 /**
  * Autoloading: prefer Composer's vendor autoloader (the optimized classmap).
  * Fall back to a minimal PSR-4 autoloader so the plugin still boots if vendor/
- * is somehow absent. Proof is fully self-contained — no external runtime deps.
+ * is somehow absent. Proof is fully self-contained, no external runtime deps.
  *
  * @package Proof
  */
