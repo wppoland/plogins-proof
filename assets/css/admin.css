@@ -206,7 +206,7 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
  * locked cards. Pure advertising (no disabled inputs), scoped to
  * .proof-settings, using the plugin's own receipt-ink accent. The
  * buttons and accent-coloured text use the fixed dark --proof-pro-cta
