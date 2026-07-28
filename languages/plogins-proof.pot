@@ -40,11 +40,12 @@ msgid "https://plogins.com/"
 msgstr ""
 
 #: plogins-proof.php:48
-msgid "Proof - Sales Notifications for WooCommerce requires WooCommerce to be active."
+msgid ""
+"Proof - Sales Notifications for WooCommerce requires WooCommerce to be "
+"active."
 msgstr ""
 
-#: src/Admin/Settings.php:44
-#: src/Admin/Settings.php:102
+#: src/Admin/Settings.php:44 src/Admin/Settings.php:102
 msgid "Proof: Sales Notifications"
 msgstr ""
 
@@ -53,7 +54,9 @@ msgid "Proof"
 msgstr ""
 
 #: src/Admin/Settings.php:103
-msgid "Show small popups of recent real purchases to build trust and urgency. Only a first name and city are ever shown, never full names, emails or addresses."
+msgid ""
+"Show small popups of recent real purchases to build trust and urgency. Only "
+"a first name and city are ever shown, never full names, emails or addresses."
 msgstr ""
 
 #: src/Admin/Settings.php:112
@@ -69,7 +72,9 @@ msgid "Enable Proof"
 msgstr ""
 
 #: src/Admin/Settings.php:129
-msgid "Master switch. When off, no popups are loaded or rendered anywhere on the storefront."
+msgid ""
+"Master switch. When off, no popups are loaded or rendered anywhere on the "
+"storefront."
 msgstr ""
 
 #: src/Admin/Settings.php:135
@@ -101,7 +106,10 @@ msgid "What each popup shows"
 msgstr ""
 
 #: src/Admin/Settings.php:157
-msgid "Each popup shows the buyer's first name, billing city, the product name and how long ago the purchase happened. Surnames, emails and full addresses are never shown."
+msgid ""
+"Each popup shows the buyer's first name, billing city, the product name and "
+"how long ago the purchase happened. Surnames, emails and full addresses are "
+"never shown."
 msgstr ""
 
 #: src/Admin/Settings.php:165
@@ -111,7 +119,9 @@ msgstr ""
 #. translators: %s is the default fallback word shown when an order has no first name.
 #: src/Admin/Settings.php:168
 #, php-format
-msgid "Shown in place of a first name when the order has none. Leave blank to use the default, %s."
+msgid ""
+"Shown in place of a first name when the order has none. Leave blank to use "
+"the default, %s."
 msgstr ""
 
 #: src/Admin/Settings.php:181
@@ -123,7 +133,9 @@ msgid "Initial delay (seconds)"
 msgstr ""
 
 #: src/Admin/Settings.php:184
-msgid "How long to wait after the page loads before the first popup appears. Default 5 seconds."
+msgid ""
+"How long to wait after the page loads before the first popup appears. "
+"Default 5 seconds."
 msgstr ""
 
 #: src/Admin/Settings.php:185
@@ -131,7 +143,8 @@ msgid "Display time (seconds)"
 msgstr ""
 
 #: src/Admin/Settings.php:185
-msgid "How long each popup stays on screen before sliding away. Default 6 seconds."
+msgid ""
+"How long each popup stays on screen before sliding away. Default 6 seconds."
 msgstr ""
 
 #: src/Admin/Settings.php:186
@@ -139,7 +152,9 @@ msgid "Interval between popups (seconds)"
 msgstr ""
 
 #: src/Admin/Settings.php:186
-msgid "Gap between one popup disappearing and the next appearing. Lower values show more popups; higher values feel calmer. Default 12 seconds."
+msgid ""
+"Gap between one popup disappearing and the next appearing. Lower values show "
+"more popups; higher values feel calmer. Default 12 seconds."
 msgstr ""
 
 #: src/Admin/Settings.php:199
@@ -188,4 +203,64 @@ msgstr ""
 #: src/Service/OrderFeed.php:171
 #, php-format
 msgid "%s ago"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr ""
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr ""
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
 msgstr ""
