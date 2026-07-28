@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Plogins Proof - Social Proof for WooCommerce
+ * Plugin Name:       Proof - Social Proof for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-proof/
  * Description:        Show recent-sale social-proof popups to build trust and urgency.
- * Version:           0.1.1
+ * Version:           1.0.5
  * Requires at least: 6.5
  * Tested up to:      7.0
  * Requires PHP:      8.1
@@ -15,6 +15,7 @@
  * Text Domain:       plogins-proof
  * Domain Path:       /languages
  * WC requires at least: 8.0
+ * WC tested up to: 10.9
  *
  * @package Proof
  */
@@ -25,7 +26,7 @@ namespace Proof;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '0.1.1';
+const VERSION     = '1.0.5';
 const PLUGIN_FILE = __FILE__;
 
 define('PROOF_DIR', plugin_dir_path(__FILE__));

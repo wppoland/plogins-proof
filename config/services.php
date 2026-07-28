@@ -4,7 +4,7 @@
  * container. Bindings are lazy: nothing is instantiated here, so the container
  * is safe to build at construction time (e.g. before plugins_loaded).
  *
- * Proof is fully self-contained — all logic lives in these src/ services.
+ * Proof is fully self-contained, all logic lives in these src/ services.
  *
  * @package Proof
  */

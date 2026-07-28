@@ -6,16 +6,16 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/proof\n"
 "POT-Creation-Date: 2026-06-16T20:24:00+00:00\n"
 "PO-Revision-Date: 2026-06-15 00:00+0000\n"
-"Last-Translator: WPPoland <kontakt@wppoland.com>\n"
+"Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: plogins-proof\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
 "|| n%100>14) ? 1 : 2);\n"
+"X-Domain: plogins-proof\n"
+"X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: plogins-proof.php
@@ -123,6 +123,9 @@ msgid ""
 "how long ago the purchase happened. Surnames, emails and full addresses are "
 "never shown."
 msgstr ""
+"Każde wyskakujące okienko pokazuje imię kupującego, miasto rozliczenia, "
+"nazwę produktu i czas temu, kiedy nastąpił zakup. Nazwiska, adresy e-mail i "
+"pełne adresy nigdy nie są wyświetlane."
 
 #: src/Admin/Settings.php:165
 msgid "Fallback name"
@@ -135,6 +138,8 @@ msgid ""
 "Shown in place of a first name when the order has none. Leave blank to use "
 "the default, %s."
 msgstr ""
+"Wyświetlane zamiast imienia, jeśli zamówienie go nie zawiera. Pozostaw "
+"puste, aby użyć wartości domyślnej %s."
 
 #: src/Admin/Settings.php:181
 msgid "Timing"
@@ -149,6 +154,8 @@ msgid ""
 "How long to wait after the page loads before the first popup appears. "
 "Default 5 seconds."
 msgstr ""
+"Jak długo czekać po załadowaniu strony, zanim pojawi się pierwsze "
+"wyskakujące okienko. Domyślnie 5 sekund."
 
 #: src/Admin/Settings.php:185
 msgid "Display time (seconds)"
@@ -158,6 +165,8 @@ msgstr "Czas wyświetlania (sekundy)"
 msgid ""
 "How long each popup stays on screen before sliding away. Default 6 seconds."
 msgstr ""
+"Jak długo każde wyskakujące okienko pozostaje na ekranie, zanim się zsunie. "
+"Domyślnie 6 sekund."
 
 #: src/Admin/Settings.php:186
 msgid "Interval between popups (seconds)"
@@ -168,22 +177,25 @@ msgid ""
 "Gap between one popup disappearing and the next appearing. Lower values show "
 "more popups; higher values feel calmer. Default 12 seconds."
 msgstr ""
+"Przerwa między zniknięciem jednego wyskakującego okienka a pojawieniem się "
+"następnego. Niższe wartości pokazują więcej wyskakujących okienek; wyższe "
+"wartości sprawiają wrażenie spokojniejszych. Domyślnie 12 sekund."
 
 #: src/Admin/Settings.php:199
 msgid "Example"
-msgstr ""
+msgstr "Przykład"
 
 #: src/Admin/Settings.php:206
 msgid "Alex from Berlin"
-msgstr ""
+msgstr "Alex z Berlina"
 
 #: src/Admin/Settings.php:206
 msgid "bought Merino Hoodie"
-msgstr ""
+msgstr "kupił(a) bluzę z kapturem Merino"
 
 #: src/Admin/Settings.php:207
 msgid "2 hours ago"
-msgstr ""
+msgstr "2 godziny temu"
 
 #: src/Admin/Settings.php:224
 msgid "Enabled"
@@ -217,14 +229,74 @@ msgstr "Ktoś"
 msgid "%s ago"
 msgstr "%s temu"
 
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Wkrótce"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Wkrótce"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "od %d zł/rok"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "od %1$s%2$d/rok"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Przejdź na PRO"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Brak uprawnień."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Zrób więcej dzięki %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Odrzuć to powiadomienie"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Odblokuj wszystkie funkcje PRO"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "jedna licencja, wszystkie funkcje PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Co dodaje %s"
+
 #~ msgid ""
 #~ "Each popup shows the buyer's first name, billing city, the product name "
-#~ "and how long ago the purchase happened — for example \"Alex from Berlin "
+#~ "and how long ago the purchase happened, for example \"Alex from Berlin "
 #~ "bought Hoodie 2 hours ago\". Surnames, emails and full addresses are "
 #~ "never shown."
 #~ msgstr ""
 #~ "Każde powiadomienie wyświetla imię kupującego, miasto z danych "
-#~ "rozliczeniowych, nazwę produktu oraz jak dawno temu nastąpił zakup — na "
+#~ "rozliczeniowych, nazwę produktu oraz jak dawno temu nastąpił zakup, na "
 #~ "przykład „Alex z Berlina kupił(a) Bluzę 2 godziny temu”. Nazwiska, adresy "
 #~ "e-mail i pełne adresy nigdy nie są wyświetlane."
 

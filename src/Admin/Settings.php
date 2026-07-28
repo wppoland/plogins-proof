@@ -208,7 +208,7 @@ final class Settings implements HasHooks
 
     /**
      * A small, static facsimile of a live popup so admins see the exact shape
-     * and wording before saving — show, don't just describe.
+     * and wording before saving, show, don't just describe.
      */
     private function previewExample(): void
     {
