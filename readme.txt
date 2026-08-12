@@ -113,5 +113,3 @@ Plogins Proof includes Polish, German and Spanish translations for the plugin in
 
 = 0.1.0 =
 * First release: corner popups built from recent completed and processing orders, showing first name and city only. Configurable corner, fallback name and timing (delay, display time, interval). HPOS and Cart/Checkout blocks compatible.
-</content>
-</invoke>
