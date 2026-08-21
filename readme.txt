@@ -32,7 +32,7 @@ What you can configure under WooCommerce -> Proof:
 
 It declares compatibility with WooCommerce High-Performance Order Storage (HPOS) and the Cart and Checkout blocks.
 
-Source and issue tracker: the code lives at https://github.com/wppoland/plogins-proof. Bug reports and patches are welcome there.
+Source and issue tracker: the code lives at [github.com/wppoland/plogins-proof](https://github.com/wppoland/plogins-proof). Bug reports and patches are welcome there.
 
 == Installation ==
 
@@ -46,10 +46,10 @@ Source and issue tracker: the code lives at https://github.com/wppoland/plogins-
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-proof/docs/
-* **Plugin page** - https://plogins.com/plogins-proof/
-* **Source code** - https://github.com/wppoland/plogins-proof
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-proof/issues
+* **Documentation**: [plogins.com/plogins-proof/docs/](https://plogins.com/plogins-proof/docs/)
+* **Plugin page**: [plogins.com/plogins-proof/](https://plogins.com/plogins-proof/)
+* **Source code**: [github.com/wppoland/plogins-proof](https://github.com/wppoland/plogins-proof)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-proof/issues](https://github.com/wppoland/plogins-proof/issues)
 
 
 = Does it show fake sales? =
