@@ -3,7 +3,7 @@
  * Plugin Name:       Proof - Social Proof for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-proof/
  * Description:        Show recent-sale social-proof popups to build trust and urgency.
- * Version:           1.0.5
+ * Version:           1.0.6
  * Requires at least: 6.5
  * Tested up to:      7.0
  * Requires PHP:      8.1
