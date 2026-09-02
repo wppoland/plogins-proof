@@ -19,7 +19,7 @@ Each popup carries only two pieces of customer data: the billing first name and 
 
 If there are no completed or processing orders in the last 30 days, Proof loads nothing at all. No popup, no script, no empty widget.
 
-The front-end script is plain JavaScript with no dependencies. It loads `defer` in the footer, and the popup sits in a fixed corner so it never reflows the page or adds to Cumulative Layout Shift. The order query runs at most once every five minutes and the result is stored in a transient, so a busy storefront does not re-query orders on every page view.
+The front-end script is plain JavaScript with no dependencies. It loads `defer` in the footer, and the popup sits in a fixed corner so it never reflows the page or adds to Cumulative Layout Shift. The order data is cached in a five-minute transient and refreshed when a new order comes in or an order changes status, so a busy storefront does not re-query orders on every page view.
 
 For screen reader users the popup is a `role="status"` region with `aria-live="polite"`, so each notification is announced without grabbing focus. The dismiss button is a real button with a visible focus ring, focus is never trapped, and the styling follows `prefers-reduced-motion` and `prefers-color-scheme: dark`.
 
@@ -66,7 +66,7 @@ Up to the 40 most recent orders with the status "completed" or "processing", lim
 
 = Will it slow my store down or shift the layout? =
 
-The script is small, dependency-free, and deferred to the footer; the order data is cached in a transient; and the popup is pinned to a corner, so it does not move other content. There is no measurable layout shift.
+The script is small, dependency-free, and deferred to the footer; the order data is cached in a five-minute transient and refreshed on new orders; and the popup is pinned to a corner, so it does not move other content. There is no measurable layout shift.
 
 = Is it usable with a screen reader or keyboard? =
 
