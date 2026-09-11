@@ -11,7 +11,7 @@
 	--proof-card-radius: 10px;
 	/* Family accent: the same verified-receipt ink as the storefront popup, but
 	   shifted deeper so it clears WCAG AA on every wp-admin surface.
-	   #0a6647 → 6.99:1 on #fff, 6.14:1 on the #f0f0f1 admin canvas (AA text). */
+	   #0a6647 > 6.99:1 on #fff, 6.14:1 on the #f0f0f1 admin canvas (AA text). */
 	--proof-accent: #0a6647;
 	max-width: 820px;
 }
