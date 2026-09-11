@@ -181,8 +181,11 @@ final class Settings implements HasHooks
             'anonymous_name_text',
             __('Fallback name', 'plogins-proof'),
             (string) $s['anonymous_name_text'],
-            /* translators: %s is the default fallback word shown when an order has no first name. */
-            sprintf(__('Shown in place of a first name when the order has none. Leave blank to use the default, %s.', 'plogins-proof'), '“Someone”'),
+            /* translators: %s is the translated default word shown when an order has no first name. */
+            sprintf(
+                __('Shown in place of a first name when the order has none. Leave blank to use the default, “%s”.', 'plogins-proof'),
+                __('Someone', 'plogins-proof'),
+            ),
         );
 
         echo '</tbody></table>';

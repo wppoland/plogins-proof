@@ -119,9 +119,15 @@ final class OrderFeed
         }
 
         $firstName = trim((string) $order->get_billing_first_name());
+        // The ?? fallback below was unreachable: config/defaults.php always
+        // supplied the literal 'Someone', so the translated string never ran
+        // and every non-English shop showed an English word to its shoppers.
+        // The default is blank now, so trim() decides and the translation is
+        // the real fallback.
+        $anonymous = trim((string) ($this->settings['anonymous_name_text'] ?? ''));
         $name      = $firstName !== ''
             ? $firstName
-            : (string) ($this->settings['anonymous_name_text'] ?? __('Someone', 'plogins-proof'));
+            : ($anonymous !== '' ? $anonymous : __('Someone', 'plogins-proof'));
 
         $city = trim((string) $order->get_billing_city());
 
