@@ -13,37 +13,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Domain: plogins-proof\n"
+"X-Domain: atesto\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: plogins-proof.php
+#: atesto.php
 msgid "Proof - Sales Notifications for WooCommerce"
 msgstr "Proof, Verkaufsbenachrichtigungen für WooCommerce"
 
 #. Plugin URI of the plugin
-#: plogins-proof.php
+#: atesto.php
 msgid "https://plogins.com/proof/"
 msgstr "https://plogins.com/de/proof/"
 
 #. Description of the plugin
-#: plogins-proof.php
+#: atesto.php
 msgid "Show recent-sale social-proof popups to build trust and urgency."
 msgstr ""
 "Zeige Social-Proof-Popups aus aktuellen Verkäufen an, um Vertrauen und "
 "Dringlichkeit aufzubauen."
 
 #. Author of the plugin
-#: plogins-proof.php
+#: atesto.php
 msgid "WPPoland"
 msgstr "WPPoland"
 
 #. Author URI of the plugin
-#: plogins-proof.php
+#: atesto.php
 msgid "https://plogins.com/"
 msgstr "https://plogins.com/"
 
-#: plogins-proof.php:48
+#: atesto.php:48
 msgid ""
 "Proof - Sales Notifications for WooCommerce requires WooCommerce to be "
 "active."
@@ -52,11 +52,11 @@ msgstr ""
 "WooCommerce aktiv ist."
 
 #: src/Admin/Settings.php:44 src/Admin/Settings.php:102
-msgid "Proof: Sales Notifications"
+msgid "Atesto: Sales Notifications"
 msgstr "Proof: Verkaufsbenachrichtigungen"
 
 #: src/Admin/Settings.php:45
-msgid "Proof"
+msgid "Atesto"
 msgstr "Proof"
 
 #: src/Admin/Settings.php:103
@@ -77,7 +77,7 @@ msgid "General"
 msgstr "Allgemein"
 
 #: src/Admin/Settings.php:128
-msgid "Enable Proof"
+msgid "Enable Atesto"
 msgstr "Proof aktivieren"
 
 #: src/Admin/Settings.php:129

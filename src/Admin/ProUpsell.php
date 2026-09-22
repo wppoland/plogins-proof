@@ -82,13 +82,13 @@ final class ProUpsell
     private function priceLabel(): string
     {
         if (! $this->sellable()) {
-            return $this->isPolish() ? __('Wkrótce', 'plogins-proof') : __('Coming soon', 'plogins-proof');
+            return $this->isPolish() ? __('Wkrótce', 'atesto') : __('Coming soon', 'atesto');
         }
         $d = $this->data();
         if (! empty($d['price_from'])) {
             $cur = ($d['currency'] ?? 'EUR') === 'EUR' ? '€' : (string) $d['currency'] . ' ';
             /* translators: 1: currency symbol, 2: yearly price */
-            return sprintf(__('from %1$s%2$d/yr', 'plogins-proof'), $cur, (int) $d['price_from']);
+            return sprintf(__('from %1$s%2$d/yr', 'atesto'), $cur, (int) $d['price_from']);
         }
         return '';
     }
@@ -97,8 +97,8 @@ final class ProUpsell
     private function ctaLabel(): string
     {
         return $this->sellable()
-            ? __('Upgrade to PRO', 'plogins-proof')
-            : ($this->isPolish() ? __('Powiadom mnie', 'plogins-proof') : __('Get notified', 'plogins-proof'));
+            ? __('Upgrade to PRO', 'atesto')
+            : ($this->isPolish() ? __('Powiadom mnie', 'atesto') : __('Get notified', 'atesto'));
     }
 
     /** @return array<int, array{title: string, desc: string}> */
@@ -128,7 +128,7 @@ final class ProUpsell
     public function handleDismiss(): void
     {
         if (! current_user_can('manage_woocommerce')) {
-            wp_die(esc_html__('Permission denied.', 'plogins-proof'));
+            wp_die(esc_html__('Permission denied.', 'atesto'));
         }
         check_admin_referer(self::ACTION);
         update_user_meta(get_current_user_id(), self::META, 1);
@@ -146,7 +146,7 @@ final class ProUpsell
         if (! $this->enabled() || $this->bannerDismissed()) {
             return;
         }
-        $name     = (string) ($this->data()['name'] ?? 'Proof Pro');
+        $name     = (string) ($this->data()['name'] ?? 'Atesto Pro');
         $price    = $this->priceLabel();
         $subtitle = implode(', ', array_slice(array_map(
             static fn (array $f): string => $f['title'],
@@ -158,14 +158,14 @@ final class ProUpsell
             <p class="proof-pro-banner__text">
                 <strong><?php
                 /* translators: %s: PRO edition name */
-                printf(esc_html__('Do more with %s', 'plogins-proof'), esc_html($name)); ?></strong>
+                printf(esc_html__('Do more with %s', 'atesto'), esc_html($name)); ?></strong>
                 <?php if ($subtitle !== '') : ?><span class="proof-pro-banner__sub"><?php echo esc_html($subtitle); ?></span><?php endif; ?>
                 <?php if ($price !== '') : ?><span class="proof-pro-banner__price"><?php echo esc_html($price); ?></span><?php endif; ?>
             </p>
             <a class="button button-primary proof-pro-banner__cta" href="<?php echo esc_url($this->url()); ?>" target="_blank" rel="noopener noreferrer">
                 <?php echo esc_html($this->ctaLabel()); ?>
             </a>
-            <a class="proof-pro-banner__dismiss" href="<?php echo esc_url($this->dismissUrl()); ?>" aria-label="<?php esc_attr_e('Dismiss this notice', 'plogins-proof'); ?>">&times;</a>
+            <a class="proof-pro-banner__dismiss" href="<?php echo esc_url($this->dismissUrl()); ?>" aria-label="<?php esc_attr_e('Dismiss this notice', 'atesto'); ?>">&times;</a>
         </div>
         <?php
     }
@@ -176,13 +176,13 @@ final class ProUpsell
         if (! $this->enabled()) {
             return;
         }
-        $name     = (string) ($this->data()['name'] ?? 'Proof Pro');
+        $name     = (string) ($this->data()['name'] ?? 'Atesto Pro');
         $price    = $this->priceLabel();
         $features = $this->features();
         ?>
         <aside class="proof-pro-aside" aria-labelledby="proof-pro-aside-h">
             <p class="proof-pro-aside__eyebrow"><?php echo esc_html($name); ?></p>
-            <h2 id="proof-pro-aside-h" class="proof-pro-aside__heading"><?php esc_html_e('Unlock every PRO feature', 'plogins-proof'); ?></h2>
+            <h2 id="proof-pro-aside-h" class="proof-pro-aside__heading"><?php esc_html_e('Unlock every PRO feature', 'atesto'); ?></h2>
             <ul class="proof-pro-aside__list">
                 <?php foreach ($features as $f) : ?>
                     <li>
@@ -195,7 +195,7 @@ final class ProUpsell
                 <?php echo esc_html($this->ctaLabel()); ?>
             </a>
             <?php if ($price !== '') : ?>
-                <p class="proof-pro-aside__price"><?php echo esc_html($price); ?><?php if ($this->sellable()) : ?> · <?php esc_html_e('one licence, every PRO feature', 'plogins-proof'); ?><?php endif; ?></p>
+                <p class="proof-pro-aside__price"><?php echo esc_html($price); ?><?php if ($this->sellable()) : ?> · <?php esc_html_e('one licence, every PRO feature', 'atesto'); ?><?php endif; ?></p>
             <?php endif; ?>
         </aside>
         <?php
@@ -208,13 +208,13 @@ final class ProUpsell
             return;
         }
         $features = $this->features();
-        $name     = (string) ($this->data()['name'] ?? 'Proof Pro');
+        $name     = (string) ($this->data()['name'] ?? 'Atesto Pro');
         ?>
         <section class="proof-pro-cards" aria-labelledby="proof-pro-cards-h">
             <h2 id="proof-pro-cards-h" class="proof-pro-cards__title">
                 <?php
                 /* translators: %s: PRO edition name */
-                printf(esc_html__('What %s adds', 'plogins-proof'), esc_html($name)); ?>
+                printf(esc_html__('What %s adds', 'atesto'), esc_html($name)); ?>
             </h2>
             <div class="proof-pro-cards__grid">
                 <?php foreach ($features as $f) : ?>

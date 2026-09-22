@@ -10,7 +10,7 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Proof Pro',
+    'name'       => 'Atesto Pro',
     'url'        => 'https://plogins.com/plogins-proof-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,

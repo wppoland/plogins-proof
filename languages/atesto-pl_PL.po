@@ -5,58 +5,59 @@ msgstr ""
 "Project-Id-Version: Proof - Sales Notifications for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/proof\n"
 "POT-Creation-Date: 2026-06-16T20:24:00+00:00\n"
-"PO-Revision-Date: 2026-06-16T20:24:00+00:00\n"
+"PO-Revision-Date: 2026-06-15 00:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
-"Language-Team: Spanish <es@li.org>\n"
-"Language: es_ES\n"
+"Language-Team: Polish <pl@li.org>\n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Domain: plogins-proof\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"X-Domain: atesto\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: plogins-proof.php
+#: atesto.php
 msgid "Proof - Sales Notifications for WooCommerce"
-msgstr "Proof - Notificaciones de ventas para WooCommerce"
+msgstr "Proof - Powiadomienia o sprzedaży dla WooCommerce"
 
 #. Plugin URI of the plugin
-#: plogins-proof.php
+#: atesto.php
 msgid "https://plogins.com/proof/"
-msgstr "https://plogins.com/es/proof/"
+msgstr "https://plogins.com/proof/"
 
 #. Description of the plugin
-#: plogins-proof.php
+#: atesto.php
 msgid "Show recent-sale social-proof popups to build trust and urgency."
 msgstr ""
-"Muestre ventanas emergentes de prueba social de ventas recientes para "
-"generar confianza y urgencia."
+"Wyświetlaj wyskakujące powiadomienia o niedawnych zakupach (społeczny dowód "
+"słuszności), aby budować zaufanie i poczucie pilności."
 
 #. Author of the plugin
-#: plogins-proof.php
+#: atesto.php
 msgid "WPPoland"
 msgstr "WPPoland"
 
 #. Author URI of the plugin
-#: plogins-proof.php
+#: atesto.php
 msgid "https://plogins.com/"
 msgstr "https://plogins.com/"
 
-#: plogins-proof.php:48
+#: atesto.php:48
 msgid ""
 "Proof - Sales Notifications for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Proof - Notificaciones de ventas para WooCommerce requiere que WooCommerce "
-"esté activo."
+"Proof - Powiadomienia o sprzedaży dla WooCommerce wymaga aktywnego "
+"WooCommerce."
 
 #: src/Admin/Settings.php:44 src/Admin/Settings.php:102
-msgid "Proof: Sales Notifications"
-msgstr "Proof: Notificaciones de ventas"
+msgid "Atesto: Sales Notifications"
+msgstr "Proof: Powiadomienia o sprzedaży"
 
 #: src/Admin/Settings.php:45
-msgid "Proof"
+msgid "Atesto"
 msgstr "Proof"
 
 #: src/Admin/Settings.php:103
@@ -64,57 +65,57 @@ msgid ""
 "Show small popups of recent real purchases to build trust and urgency. Only "
 "a first name and city are ever shown, never full names, emails or addresses."
 msgstr ""
-"Muestre pequeñas ventanas emergentes de compras reales recientes para "
-"generar confianza y urgencia. Sólo se muestran el nombre y la ciudad, nunca "
-"nombres completos, correos electrónicos o direcciones."
+"Wyświetlaj niewielkie wyskakujące powiadomienia o niedawnych prawdziwych "
+"zakupach, aby budować zaufanie i poczucie pilności. Pokazywane są wyłącznie "
+"imię i miasto, nigdy pełne nazwiska, adresy e-mail ani adresy zamieszkania."
 
 #: src/Admin/Settings.php:112
 msgid "Save changes"
-msgstr "Guardar cambios"
+msgstr "Zapisz zmiany"
 
 #: src/Admin/Settings.php:123
 msgid "General"
-msgstr "General"
+msgstr "Ogólne"
 
 #: src/Admin/Settings.php:128
-msgid "Enable Proof"
-msgstr "Habilitar Proof"
+msgid "Enable Atesto"
+msgstr "Włącz Proof"
 
 #: src/Admin/Settings.php:129
 msgid ""
 "Master switch. When off, no popups are loaded or rendered anywhere on the "
 "storefront."
 msgstr ""
-"Interruptor maestro. Cuando está desactivado, no se cargan ni muestran "
-"ventanas emergentes en ninguna parte del escaparate."
+"Główny przełącznik. Po wyłączeniu żadne powiadomienia nie są wczytywane ani "
+"wyświetlane w żadnym miejscu sklepu."
 
 #: src/Admin/Settings.php:135
 msgid "Screen corner"
-msgstr "Esquina de la pantalla"
+msgstr "Narożnik ekranu"
 
 #: src/Admin/Settings.php:137
 msgid "Bottom left"
-msgstr "Abajo a la izquierda"
+msgstr "Lewy dolny"
 
 #: src/Admin/Settings.php:138
 msgid "Bottom right"
-msgstr "Abajo a la derecha"
+msgstr "Prawy dolny"
 
 #: src/Admin/Settings.php:139
 msgid "Top left"
-msgstr "Arriba a la izquierda"
+msgstr "Lewy górny"
 
 #: src/Admin/Settings.php:140
 msgid "Top right"
-msgstr "Arriba a la derecha"
+msgstr "Prawy górny"
 
 #: src/Admin/Settings.php:143
 msgid "Which corner of the screen the popup slides in from."
-msgstr "Desde qué esquina de la pantalla se desliza la ventana emergente."
+msgstr "Z którego narożnika ekranu wsuwa się powiadomienie."
 
 #: src/Admin/Settings.php:156
 msgid "What each popup shows"
-msgstr "Qué muestra cada ventana emergente"
+msgstr "Co wyświetla każde powiadomienie"
 
 #: src/Admin/Settings.php:157
 msgid ""
@@ -122,14 +123,13 @@ msgid ""
 "how long ago the purchase happened. Surnames, emails and full addresses are "
 "never shown."
 msgstr ""
-"Cada ventana emergente muestra el nombre del comprador, la ciudad de "
-"facturación, el nombre del producto y cuánto tiempo hace que se realizó la "
-"compra. Nunca se muestran apellidos, correos electrónicos y direcciones "
-"completas."
+"Każde wyskakujące okienko pokazuje imię kupującego, miasto rozliczenia, "
+"nazwę produktu i czas temu, kiedy nastąpił zakup. Nazwiska, adresy e-mail i "
+"pełne adresy nigdy nie są wyświetlane."
 
 #: src/Admin/Settings.php:165
 msgid "Fallback name"
-msgstr "Nombre alternativo"
+msgstr "Nazwa zastępcza"
 
 #. translators: %s is the default fallback word shown when an order has no first name.
 #: src/Admin/Settings.php:168
@@ -138,153 +138,185 @@ msgid ""
 "Shown in place of a first name when the order has none. Leave blank to use "
 "the default, %s."
 msgstr ""
-"Se muestra en lugar de un nombre cuando el pedido no lo tiene. Déjelo en "
-"blanco para usar el valor predeterminado, %s."
+"Wyświetlane zamiast imienia, jeśli zamówienie go nie zawiera. Pozostaw "
+"puste, aby użyć wartości domyślnej %s."
 
 #: src/Admin/Settings.php:181
 msgid "Timing"
-msgstr "Tiempos"
+msgstr "Czas wyświetlania"
 
 #: src/Admin/Settings.php:184
 msgid "Initial delay (seconds)"
-msgstr "Retraso inicial (segundos)"
+msgstr "Początkowe opóźnienie (sekundy)"
 
 #: src/Admin/Settings.php:184
 msgid ""
 "How long to wait after the page loads before the first popup appears. "
 "Default 5 seconds."
 msgstr ""
-"Cuánto tiempo esperar después de que se carga la página antes de que "
-"aparezca la primera ventana emergente. Por defecto 5 segundos."
+"Jak długo czekać po załadowaniu strony, zanim pojawi się pierwsze "
+"wyskakujące okienko. Domyślnie 5 sekund."
 
 #: src/Admin/Settings.php:185
 msgid "Display time (seconds)"
-msgstr "Tiempo de visualización (segundos)"
+msgstr "Czas wyświetlania (sekundy)"
 
 #: src/Admin/Settings.php:185
 msgid ""
 "How long each popup stays on screen before sliding away. Default 6 seconds."
 msgstr ""
-"Cuánto tiempo permanece cada ventana emergente en la pantalla antes de "
-"desaparecer. Por defecto 6 segundos."
+"Jak długo każde wyskakujące okienko pozostaje na ekranie, zanim się zsunie. "
+"Domyślnie 6 sekund."
 
 #: src/Admin/Settings.php:186
 msgid "Interval between popups (seconds)"
-msgstr "Intervalo entre ventanas emergentes (segundos)"
+msgstr "Odstęp między powiadomieniami (sekundy)"
 
 #: src/Admin/Settings.php:186
 msgid ""
 "Gap between one popup disappearing and the next appearing. Lower values show "
 "more popups; higher values feel calmer. Default 12 seconds."
 msgstr ""
-"Brecha entre la desaparición de una ventana emergente y la aparición de la "
-"siguiente. Los valores más bajos muestran más ventanas emergentes; Los "
-"valores más altos se sienten más tranquilos. Por defecto 12 segundos."
+"Przerwa między zniknięciem jednego wyskakującego okienka a pojawieniem się "
+"następnego. Niższe wartości pokazują więcej wyskakujących okienek; wyższe "
+"wartości sprawiają wrażenie spokojniejszych. Domyślnie 12 sekund."
 
 #: src/Admin/Settings.php:199
 msgid "Example"
-msgstr "Ejemplo"
+msgstr "Przykład"
 
 #: src/Admin/Settings.php:206
 msgid "Alex from Berlin"
-msgstr "Alex de Berlín"
+msgstr "Alex z Berlina"
 
 #: src/Admin/Settings.php:206
 msgid "bought Merino Hoodie"
-msgstr "compró sudadera con capucha Merino"
+msgstr "kupił(a) bluzę z kapturem Merino"
 
 #: src/Admin/Settings.php:207
 msgid "2 hours ago"
-msgstr "hace 2 horas"
+msgstr "2 godziny temu"
 
 #: src/Admin/Settings.php:224
 msgid "Enabled"
-msgstr "Habilitado"
+msgstr "Włączone"
 
 #: src/Service/FrontendService.php:87
 msgid "Recent purchase"
-msgstr "Compra reciente"
+msgstr "Niedawny zakup"
 
 #: src/Service/FrontendService.php:88
 msgid "Dismiss notification"
-msgstr "Descartar notificación"
+msgstr "Zamknij powiadomienie"
 
 #. translators: connects a name to a city, e.g. "Alex from Berlin".
 #: src/Service/FrontendService.php:90
 msgid "from"
-msgstr "de"
+msgstr "z"
 
 #. translators: connects a buyer to a product, e.g. "bought Hoodie".
 #: src/Service/FrontendService.php:92
 msgid "bought"
-msgstr "compró"
+msgstr "kupił(a)"
 
 #: src/Service/OrderFeed.php:124
 msgid "Someone"
-msgstr "alguien"
+msgstr "Ktoś"
 
 #. translators: %s: human-readable time difference, e.g. "2 hours".
 #: src/Service/OrderFeed.php:171
 #, php-format
 msgid "%s ago"
-msgstr "Hace %s"
+msgstr "%s temu"
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
-msgstr "Próximamente"
+msgstr "Wkrótce"
 
 #: src/Admin/ProUpsell.php:78
 msgid "Coming soon"
-msgstr "Próximamente"
+msgstr "Wkrótce"
 
 #. translators: %d: yearly price in PLN
 #: src/Admin/ProUpsell.php:83
 #, php-format
 msgid "od %d zł/rok"
-msgstr "desde %d zł/año"
+msgstr "od %d zł/rok"
 
 #. translators: 1: currency symbol, 2: yearly price
 #: src/Admin/ProUpsell.php:88
 #, php-format
 msgid "from %1$s%2$d/yr"
-msgstr "desde %1$s%2$d/año"
+msgstr "od %1$s%2$d/rok"
 
 #: src/Admin/ProUpsell.php:97
 msgid "Upgrade to PRO"
-msgstr "Mejora a PRO"
+msgstr "Przejdź na PRO"
 
 #: src/Admin/ProUpsell.php:98
 msgid "Powiadom mnie"
-msgstr "Avísame"
+msgstr "Powiadom mnie"
 
 #: src/Admin/ProUpsell.php:98
 msgid "Get notified"
-msgstr "Avísame"
+msgstr "Powiadom mnie"
 
 #: src/Admin/ProUpsell.php:128
 msgid "Permission denied."
-msgstr "Permiso denegado."
+msgstr "Brak uprawnień."
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:158
 #, php-format
 msgid "Do more with %s"
-msgstr "Haz más con %s"
+msgstr "Zrób więcej dzięki %s"
 
 #: src/Admin/ProUpsell.php:165
 msgid "Dismiss this notice"
-msgstr "Descartar este aviso"
+msgstr "Odrzuć to powiadomienie"
 
 #: src/Admin/ProUpsell.php:182
 msgid "Unlock every PRO feature"
-msgstr "Desbloquea todas las funciones PRO"
+msgstr "Odblokuj wszystkie funkcje PRO"
 
 #: src/Admin/ProUpsell.php:195
 msgid "one licence, every PRO feature"
-msgstr "una licencia, todas las funciones PRO"
+msgstr "jedna licencja, wszystkie funkcje PRO"
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:214
 #, php-format
 msgid "What %s adds"
-msgstr "Lo que añade %s"
+msgstr "Co dodaje %s"
+
+#~ msgid ""
+#~ "Each popup shows the buyer's first name, billing city, the product name "
+#~ "and how long ago the purchase happened, for example \"Alex from Berlin "
+#~ "bought Hoodie 2 hours ago\". Surnames, emails and full addresses are "
+#~ "never shown."
+#~ msgstr ""
+#~ "Każde powiadomienie wyświetla imię kupującego, miasto z danych "
+#~ "rozliczeniowych, nazwę produktu oraz jak dawno temu nastąpił zakup, na "
+#~ "przykład „Alex z Berlina kupił(a) Bluzę 2 godziny temu”. Nazwiska, adresy "
+#~ "e-mail i pełne adresy nigdy nie są wyświetlane."
+
+#~ msgid ""
+#~ "Shown in place of a first name when the order has none. Defaults to "
+#~ "\"Someone\"."
+#~ msgstr ""
+#~ "Wyświetlana zamiast imienia, gdy zamówienie go nie zawiera. Domyślnie "
+#~ "„Ktoś”."
+
+#~ msgid ""
+#~ "How long to wait after the page loads before the first popup appears."
+#~ msgstr ""
+#~ "Jak długo czekać po wczytaniu strony, zanim pojawi się pierwsze "
+#~ "powiadomienie."
+
+#~ msgid "How long each popup stays on screen."
+#~ msgstr "Jak długo każde powiadomienie pozostaje na ekranie."
+
+#~ msgid "Gap between one popup disappearing and the next appearing."
+#~ msgstr ""
+#~ "Przerwa między zniknięciem jednego powiadomienia a pojawieniem się "
+#~ "kolejnego."

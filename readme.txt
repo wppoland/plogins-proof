@@ -1,10 +1,10 @@
-=== Plogins Proof - Social Proof for WooCommerce ===
+=== Atesto - Social Proof for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, social proof, sales notification, popup, fomo
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.13
+Stable tag: 1.1.0
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,17 +13,17 @@ Show a small corner popup of recent WooCommerce sales. Real orders only, first n
 
 == Description ==
 
-Proof shows a small popup in a corner of your storefront that names a recent purchase, for example "Alex from Berlin bought Hoodie 2 hours ago". The popup is built from orders that actually happened, so visitors see real activity rather than invented counters.
+Atesto shows a small popup in a corner of your storefront that names a recent purchase, for example "Alex from Berlin bought Hoodie 2 hours ago". The popup is built from orders that actually happened, so visitors see real activity rather than invented counters.
 
-Each popup carries only two pieces of customer data: the billing first name and the billing city. Surnames, emails, full addresses and order numbers never leave the server. When an order has no first name, Proof substitutes a word you choose (the default is "Someone").
+Each popup carries only two pieces of customer data: the billing first name and the billing city. Surnames, emails, full addresses and order numbers never leave the server. When an order has no first name, Atesto substitutes a word you choose (the default is "Someone").
 
-If there are no completed or processing orders in the last 30 days, Proof loads nothing at all. No popup, no script, no empty widget.
+If there are no completed or processing orders in the last 30 days, Atesto loads nothing at all. No popup, no script, no empty widget.
 
 The front-end script is plain JavaScript with no dependencies. It loads `defer` in the footer, and the popup sits in a fixed corner so it never reflows the page or adds to Cumulative Layout Shift. The order data is cached in a five-minute transient and refreshed when a new order comes in or an order changes status, so a busy storefront does not re-query orders on every page view.
 
 For screen reader users the popup is a `role="status"` region with `aria-live="polite"`, so each notification is announced without grabbing focus. The dismiss button is a real button with a visible focus ring, focus is never trapped, and the styling follows `prefers-reduced-motion` and `prefers-color-scheme: dark`.
 
-What you can configure under WooCommerce -> Proof:
+What you can configure under WooCommerce -> Atesto:
 
 * On/off master switch
 * Which of the four corners the popup appears in
@@ -37,9 +37,9 @@ Source and issue tracker: the code lives at [github.com/wppoland/plogins-proof](
 == Installation ==
 
 1. Install and activate WooCommerce 8.0 or later.
-2. Upload the `proof` folder to `/wp-content/plugins/`, or install the zip from Plugins -> Add New -> Upload Plugin.
-3. Activate Proof on the Plugins screen.
-4. Open WooCommerce -> Proof to pick a corner and adjust timing. The defaults are reasonable, so you can leave them as they are.
+2. Upload the `atesto` folder to `/wp-content/plugins/`, or install the zip from Plugins -> Add New -> Upload Plugin.
+3. Activate Atesto on the Plugins screen.
+4. Open WooCommerce -> Atesto to pick a corner and adjust timing. The defaults are reasonable, so you can leave them as they are.
 5. Once you have completed or processing orders from the last 30 days, popups start appearing on the storefront.
 
 == Frequently Asked Questions ==
@@ -74,7 +74,7 @@ Yes. Notifications are announced through an `aria-live` region, the dismiss butt
 
 = How do I remove everything on uninstall? =
 
-Deleting Proof from the Plugins screen removes its two options (`proof_settings` and `proof_db_version`) and the cached feed. It creates no custom tables and does not touch your order data.
+Deleting Atesto from the Plugins screen removes its two options (`proof_settings` and `proof_db_version`) and the cached feed. It creates no custom tables and does not touch your order data.
 
 
 = Does this plugin work on WordPress Multisite? =
@@ -83,18 +83,21 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == External Services ==
 
-Proof does not contact any external service. The popups are built from your own WooCommerce orders and the data stays on your site.
+Atesto does not contact any external service. The popups are built from your own WooCommerce orders and the data stays on your site.
 
 == Screenshots ==
 
 1. A recent-sale popup in the corner of the storefront.
-2. The Proof settings screen under WooCommerce -> Proof.
+2. The Atesto settings screen under WooCommerce -> Atesto.
 
 == Translations ==
 
-Plogins Proof is fully translatable and ships the `plogins-proof.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
+Atesto is fully translatable and ships the `atesto.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.0 =
+* Renamed to Atesto. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Atesto is Esperanto for a testimony. The text domain follows the name; the stored data, the settings and every hook are unchanged.
 
 = 1.0.13 =
 * Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
