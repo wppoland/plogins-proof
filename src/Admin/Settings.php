@@ -181,8 +181,8 @@ final class Settings implements HasHooks
             'anonymous_name_text',
             __('Fallback name', 'atesto'),
             (string) $s['anonymous_name_text'],
-            /* translators: %s is the translated default word shown when an order has no first name. */
             sprintf(
+                /* translators: %s is the translated default word shown when an order has no first name. */
                 __('Shown in place of a first name when the order has none. Leave blank to use the default, “%s”.', 'atesto'),
                 __('Someone', 'atesto'),
             ),
