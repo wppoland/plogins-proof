@@ -68,6 +68,15 @@ final class Settings implements HasHooks
                 'default'           => $this->settings->defaults(),
             ],
         );
+        // The submenu is gated on manage_woocommerce, but options.php checks
+        // manage_options unless told otherwise. Without this a shop manager can
+        // open the screen, fill it in, press Save and be told they are not
+        // allowed to manage options for this site.
+        add_filter(
+            'option_page_capability_' . self::GROUP,
+            static fn (): string => 'manage_woocommerce',
+        );
+
     }
 
     /**
