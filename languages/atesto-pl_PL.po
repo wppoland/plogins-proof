@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Proof - Sales Notifications for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/proof\n"
-"POT-Creation-Date: 2026-06-16T20:24:00+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/atesto\n"
+"POT-Creation-Date: 2026-09-11T06:44:36+00:00\n"
 "PO-Revision-Date: 2026-06-15 00:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -19,13 +19,13 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: atesto.php
-msgid "Proof - Sales Notifications for WooCommerce"
-msgstr "Proof - Powiadomienia o sprzedaży dla WooCommerce"
+msgid "Atesto - Social Proof for WooCommerce"
+msgstr ""
 
 #. Plugin URI of the plugin
 #: atesto.php
-msgid "https://plogins.com/proof/"
-msgstr "https://plogins.com/proof/"
+msgid "https://plogins.com/plogins-proof/"
+msgstr ""
 
 #. Description of the plugin
 #: atesto.php
@@ -36,31 +36,81 @@ msgstr ""
 
 #. Author of the plugin
 #: atesto.php
-msgid "WPPoland"
-msgstr "WPPoland"
+msgid "WPPoland.com"
+msgstr ""
 
 #. Author URI of the plugin
 #: atesto.php
-msgid "https://plogins.com/"
-msgstr "https://plogins.com/"
+msgid "https://wppoland.com"
+msgstr ""
 
 #: atesto.php:48
-msgid ""
-"Proof - Sales Notifications for WooCommerce requires WooCommerce to be "
-"active."
+msgid "Atesto requires WooCommerce to be active."
 msgstr ""
-"Proof - Powiadomienia o sprzedaży dla WooCommerce wymaga aktywnego "
-"WooCommerce."
 
-#: src/Admin/Settings.php:44 src/Admin/Settings.php:102
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Wkrótce"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Wkrótce"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "od %1$s%2$d/rok"
+
+#: src/Admin/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr "Przejdź na PRO"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Get notified"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:124
+msgid "Permission denied."
+msgstr "Brak uprawnień."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr "Zrób więcej dzięki %s"
+
+#: src/Admin/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr "Odrzuć to powiadomienie"
+
+#: src/Admin/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr "Odblokuj wszystkie funkcje PRO"
+
+#: src/Admin/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr "jedna licencja, wszystkie funkcje PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr "Co dodaje %s"
+
+#: src/Admin/Settings.php:52 src/Admin/Settings.php:110
 msgid "Atesto: Sales Notifications"
 msgstr "Proof: Powiadomienia o sprzedaży"
 
-#: src/Admin/Settings.php:45
+#: src/Admin/Settings.php:53
 msgid "Atesto"
 msgstr "Proof"
 
-#: src/Admin/Settings.php:103
+#: src/Admin/Settings.php:114
 msgid ""
 "Show small popups of recent real purchases to build trust and urgency. Only "
 "a first name and city are ever shown, never full names, emails or addresses."
@@ -69,19 +119,19 @@ msgstr ""
 "zakupach, aby budować zaufanie i poczucie pilności. Pokazywane są wyłącznie "
 "imię i miasto, nigdy pełne nazwiska, adresy e-mail ani adresy zamieszkania."
 
-#: src/Admin/Settings.php:112
+#: src/Admin/Settings.php:124
 msgid "Save changes"
 msgstr "Zapisz zmiany"
 
-#: src/Admin/Settings.php:123
+#: src/Admin/Settings.php:140
 msgid "General"
 msgstr "Ogólne"
 
-#: src/Admin/Settings.php:128
+#: src/Admin/Settings.php:145
 msgid "Enable Atesto"
 msgstr "Włącz Proof"
 
-#: src/Admin/Settings.php:129
+#: src/Admin/Settings.php:146
 msgid ""
 "Master switch. When off, no popups are loaded or rendered anywhere on the "
 "storefront."
@@ -89,35 +139,35 @@ msgstr ""
 "Główny przełącznik. Po wyłączeniu żadne powiadomienia nie są wczytywane ani "
 "wyświetlane w żadnym miejscu sklepu."
 
-#: src/Admin/Settings.php:135
+#: src/Admin/Settings.php:152
 msgid "Screen corner"
 msgstr "Narożnik ekranu"
 
-#: src/Admin/Settings.php:137
+#: src/Admin/Settings.php:154
 msgid "Bottom left"
 msgstr "Lewy dolny"
 
-#: src/Admin/Settings.php:138
+#: src/Admin/Settings.php:155
 msgid "Bottom right"
 msgstr "Prawy dolny"
 
-#: src/Admin/Settings.php:139
+#: src/Admin/Settings.php:156
 msgid "Top left"
 msgstr "Lewy górny"
 
-#: src/Admin/Settings.php:140
+#: src/Admin/Settings.php:157
 msgid "Top right"
 msgstr "Prawy górny"
 
-#: src/Admin/Settings.php:143
+#: src/Admin/Settings.php:160
 msgid "Which corner of the screen the popup slides in from."
 msgstr "Z którego narożnika ekranu wsuwa się powiadomienie."
 
-#: src/Admin/Settings.php:156
+#: src/Admin/Settings.php:173
 msgid "What each popup shows"
 msgstr "Co wyświetla każde powiadomienie"
 
-#: src/Admin/Settings.php:157
+#: src/Admin/Settings.php:174
 msgid ""
 "Each popup shows the buyer's first name, billing city, the product name and "
 "how long ago the purchase happened. Surnames, emails and full addresses are "
@@ -127,29 +177,30 @@ msgstr ""
 "nazwę produktu i czas temu, kiedy nastąpił zakup. Nazwiska, adresy e-mail i "
 "pełne adresy nigdy nie są wyświetlane."
 
-#: src/Admin/Settings.php:165
+#: src/Admin/Settings.php:182
 msgid "Fallback name"
 msgstr "Nazwa zastępcza"
 
-#. translators: %s is the default fallback word shown when an order has no first name.
-#: src/Admin/Settings.php:168
+#: src/Admin/Settings.php:186
 #, php-format
 msgid ""
 "Shown in place of a first name when the order has none. Leave blank to use "
-"the default, %s."
+"the default, “%s”."
 msgstr ""
-"Wyświetlane zamiast imienia, jeśli zamówienie go nie zawiera. Pozostaw "
-"puste, aby użyć wartości domyślnej %s."
 
-#: src/Admin/Settings.php:181
+#: src/Admin/Settings.php:187 src/Service/OrderFeed.php:130
+msgid "Someone"
+msgstr "Ktoś"
+
+#: src/Admin/Settings.php:201
 msgid "Timing"
 msgstr "Czas wyświetlania"
 
-#: src/Admin/Settings.php:184
+#: src/Admin/Settings.php:204
 msgid "Initial delay (seconds)"
 msgstr "Początkowe opóźnienie (sekundy)"
 
-#: src/Admin/Settings.php:184
+#: src/Admin/Settings.php:204
 msgid ""
 "How long to wait after the page loads before the first popup appears. "
 "Default 5 seconds."
@@ -157,22 +208,22 @@ msgstr ""
 "Jak długo czekać po załadowaniu strony, zanim pojawi się pierwsze "
 "wyskakujące okienko. Domyślnie 5 sekund."
 
-#: src/Admin/Settings.php:185
+#: src/Admin/Settings.php:205
 msgid "Display time (seconds)"
 msgstr "Czas wyświetlania (sekundy)"
 
-#: src/Admin/Settings.php:185
+#: src/Admin/Settings.php:205
 msgid ""
 "How long each popup stays on screen before sliding away. Default 6 seconds."
 msgstr ""
 "Jak długo każde wyskakujące okienko pozostaje na ekranie, zanim się zsunie. "
 "Domyślnie 6 sekund."
 
-#: src/Admin/Settings.php:186
+#: src/Admin/Settings.php:206
 msgid "Interval between popups (seconds)"
 msgstr "Odstęp między powiadomieniami (sekundy)"
 
-#: src/Admin/Settings.php:186
+#: src/Admin/Settings.php:206
 msgid ""
 "Gap between one popup disappearing and the next appearing. Lower values show "
 "more popups; higher values feel calmer. Default 12 seconds."
@@ -181,23 +232,23 @@ msgstr ""
 "następnego. Niższe wartości pokazują więcej wyskakujących okienek; wyższe "
 "wartości sprawiają wrażenie spokojniejszych. Domyślnie 12 sekund."
 
-#: src/Admin/Settings.php:199
+#: src/Admin/Settings.php:219
 msgid "Example"
 msgstr "Przykład"
 
-#: src/Admin/Settings.php:206
+#: src/Admin/Settings.php:226
 msgid "Alex from Berlin"
 msgstr "Alex z Berlina"
 
-#: src/Admin/Settings.php:206
+#: src/Admin/Settings.php:226
 msgid "bought Merino Hoodie"
 msgstr "kupił(a) bluzę z kapturem Merino"
 
-#: src/Admin/Settings.php:207
+#: src/Admin/Settings.php:227
 msgid "2 hours ago"
 msgstr "2 godziny temu"
 
-#: src/Admin/Settings.php:224
+#: src/Admin/Settings.php:244
 msgid "Enabled"
 msgstr "Włączone"
 
@@ -219,75 +270,42 @@ msgstr "z"
 msgid "bought"
 msgstr "kupił(a)"
 
-#: src/Service/OrderFeed.php:124
-msgid "Someone"
-msgstr "Ktoś"
-
 #. translators: %s: human-readable time difference, e.g. "2 hours".
-#: src/Service/OrderFeed.php:171
+#: src/Service/OrderFeed.php:177
 #, php-format
 msgid "%s ago"
 msgstr "%s temu"
 
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Wkrótce"
+#~ msgid "Proof - Sales Notifications for WooCommerce"
+#~ msgstr "Proof - Powiadomienia o sprzedaży dla WooCommerce"
 
-#: src/Admin/ProUpsell.php:78
-msgid "Coming soon"
-msgstr "Wkrótce"
+#~ msgid "https://plogins.com/proof/"
+#~ msgstr "https://plogins.com/proof/"
 
-#. translators: %d: yearly price in PLN
-#: src/Admin/ProUpsell.php:83
+#~ msgid "WPPoland"
+#~ msgstr "WPPoland"
+
+#~ msgid "https://plogins.com/"
+#~ msgstr "https://plogins.com/"
+
+#~ msgid ""
+#~ "Proof - Sales Notifications for WooCommerce requires WooCommerce to be "
+#~ "active."
+#~ msgstr ""
+#~ "Proof - Powiadomienia o sprzedaży dla WooCommerce wymaga aktywnego "
+#~ "WooCommerce."
+
 #, php-format
-msgid "od %d zł/rok"
-msgstr "od %d zł/rok"
+#~ msgid ""
+#~ "Shown in place of a first name when the order has none. Leave blank to "
+#~ "use the default, %s."
+#~ msgstr ""
+#~ "Wyświetlane zamiast imienia, jeśli zamówienie go nie zawiera. Pozostaw "
+#~ "puste, aby użyć wartości domyślnej %s."
 
-#. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:88
 #, php-format
-msgid "from %1$s%2$d/yr"
-msgstr "od %1$s%2$d/rok"
-
-#: src/Admin/ProUpsell.php:97
-msgid "Upgrade to PRO"
-msgstr "Przejdź na PRO"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Powiadom mnie"
-msgstr "Powiadom mnie"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Get notified"
-msgstr "Powiadom mnie"
-
-#: src/Admin/ProUpsell.php:128
-msgid "Permission denied."
-msgstr "Brak uprawnień."
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:158
-#, php-format
-msgid "Do more with %s"
-msgstr "Zrób więcej dzięki %s"
-
-#: src/Admin/ProUpsell.php:165
-msgid "Dismiss this notice"
-msgstr "Odrzuć to powiadomienie"
-
-#: src/Admin/ProUpsell.php:182
-msgid "Unlock every PRO feature"
-msgstr "Odblokuj wszystkie funkcje PRO"
-
-#: src/Admin/ProUpsell.php:195
-msgid "one licence, every PRO feature"
-msgstr "jedna licencja, wszystkie funkcje PRO"
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:214
-#, php-format
-msgid "What %s adds"
-msgstr "Co dodaje %s"
+#~ msgid "od %d zł/rok"
+#~ msgstr "od %d zł/rok"
 
 #~ msgid ""
 #~ "Each popup shows the buyer's first name, billing city, the product name "
