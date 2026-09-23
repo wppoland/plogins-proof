@@ -20,12 +20,12 @@ msgstr ""
 #. Plugin Name of the plugin
 #: atesto.php
 msgid "Atesto - Social Proof for WooCommerce"
-msgstr ""
+msgstr "Proof - Społeczny dowód słuszności dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: atesto.php
 msgid "https://plogins.com/plogins-proof/"
-msgstr ""
+msgstr "https://plogins.com/plogins-proof/"
 
 #. Description of the plugin
 #: atesto.php
@@ -37,16 +37,16 @@ msgstr ""
 #. Author of the plugin
 #: atesto.php
 msgid "WPPoland.com"
-msgstr ""
+msgstr "WPPoland.com"
 
 #. Author URI of the plugin
 #: atesto.php
 msgid "https://wppoland.com"
-msgstr ""
+msgstr "https://wppoland.com"
 
 #: atesto.php:48
 msgid "Atesto requires WooCommerce to be active."
-msgstr ""
+msgstr "Proof wymaga aktywnego WooCommerce."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
@@ -186,7 +186,7 @@ msgstr "Nazwa zastępcza"
 msgid ""
 "Shown in place of a first name when the order has none. Leave blank to use "
 "the default, “%s”."
-msgstr ""
+msgstr "Pokazywana zamiast imienia, gdy zamówienie go nie ma. Zostaw puste, aby użyć domyślnej: \"%s\"."
 
 #: src/Admin/Settings.php:187 src/Service/OrderFeed.php:130
 msgid "Someone"
