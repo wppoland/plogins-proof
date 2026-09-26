@@ -103,11 +103,11 @@ msgstr "Lo que añade %s"
 
 #: src/Admin/Settings.php:52 src/Admin/Settings.php:110
 msgid "Atesto: Sales Notifications"
-msgstr "Proof: Notificaciones de ventas"
+msgstr "Atesto: Notificaciones de ventas"
 
 #: src/Admin/Settings.php:53
 msgid "Atesto"
-msgstr "Proof"
+msgstr "Atesto"
 
 #: src/Admin/Settings.php:114
 msgid ""
@@ -128,7 +128,7 @@ msgstr "General"
 
 #: src/Admin/Settings.php:145
 msgid "Enable Atesto"
-msgstr "Habilitar Proof"
+msgstr "Habilitar Atesto"
 
 #: src/Admin/Settings.php:146
 msgid ""
@@ -225,8 +225,8 @@ msgstr "Intervalo entre ventanas emergentes (segundos)"
 
 #: src/Admin/Settings.php:206
 msgid ""
-"Gap between one popup disappearing and the next appearing. Lower values show "
-"more popups; higher values feel calmer. Default 12 seconds."
+"Gap between one popup disappearing and the next appearing. Lower values show"
+" more popups; higher values feel calmer. Default 12 seconds."
 msgstr ""
 "Brecha entre la desaparición de una ventana emergente y la aparición de la "
 "siguiente. Los valores más bajos muestran más ventanas emergentes; Los "
@@ -292,13 +292,13 @@ msgstr "Hace %s"
 #~ "Proof - Sales Notifications for WooCommerce requires WooCommerce to be "
 #~ "active."
 #~ msgstr ""
-#~ "Proof - Notificaciones de ventas para WooCommerce requiere que "
-#~ "WooCommerce esté activo."
+#~ "Proof - Notificaciones de ventas para WooCommerce requiere que WooCommerce "
+#~ "esté activo."
 
 #, php-format
 #~ msgid ""
-#~ "Shown in place of a first name when the order has none. Leave blank to "
-#~ "use the default, %s."
+#~ "Shown in place of a first name when the order has none. Leave blank to use "
+#~ "the default, %s."
 #~ msgstr ""
 #~ "Se muestra en lugar de un nombre cuando el pedido no lo tiene. Déjelo en "
 #~ "blanco para usar el valor predeterminado, %s."
