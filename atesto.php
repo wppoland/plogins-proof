@@ -1,21 +1,20 @@
 <?php
 /**
- * Plugin Name:       Proof - Social Proof for WooCommerce
+ * Plugin Name:       Atesto - Social Proof for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-proof/
  * Description:        Show recent-sale social-proof popups to build trust and urgency.
- * Version:           1.0.5
+ * Version:           1.1.1
  * Requires at least: 6.5
- * Tested up to:      7.0
  * Requires PHP:      8.1
  * Requires Plugins:  woocommerce
  * Author:            WPPoland.com
  * Author URI:        https://wppoland.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       plogins-proof
+ * Text Domain:       atesto
  * Domain Path:       /languages
  * WC requires at least: 8.0
- * WC tested up to: 10.9
+ * WC tested up to: 11.0
  *
  * @package Proof
  */
@@ -26,7 +25,7 @@ namespace Proof;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '1.0.5';
+const VERSION     = '1.1.1';
 const PLUGIN_FILE = __FILE__;
 
 define('PROOF_DIR', plugin_dir_path(__FILE__));
@@ -46,7 +45,7 @@ add_action('plugins_loaded', static function (): void {
     if (! class_exists('WooCommerce')) {
         add_action('admin_notices', static function (): void {
             echo '<div class="notice notice-error"><p>';
-            echo esc_html__('Proof - Sales Notifications for WooCommerce requires WooCommerce to be active.', 'plogins-proof');
+            echo esc_html__('Atesto requires WooCommerce to be active.', 'atesto');
             echo '</p></div>';
         });
         return;

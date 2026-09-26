@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Proof - Sales Notifications for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/proof\n"
-"POT-Creation-Date: 2026-06-16T20:24:00+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/atesto\n"
+"POT-Creation-Date: 2026-09-11T06:44:36+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:24:00+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -13,53 +13,103 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Domain: plogins-proof\n"
+"X-Domain: atesto\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: plogins-proof.php
-msgid "Proof - Sales Notifications for WooCommerce"
-msgstr "Proof - Notificaciones de ventas para WooCommerce"
+#: atesto.php
+msgid "Atesto - Social Proof for WooCommerce"
+msgstr ""
 
 #. Plugin URI of the plugin
-#: plogins-proof.php
-msgid "https://plogins.com/proof/"
-msgstr "https://plogins.com/es/proof/"
+#: atesto.php
+msgid "https://plogins.com/plogins-proof/"
+msgstr ""
 
 #. Description of the plugin
-#: plogins-proof.php
+#: atesto.php
 msgid "Show recent-sale social-proof popups to build trust and urgency."
 msgstr ""
 "Muestre ventanas emergentes de prueba social de ventas recientes para "
 "generar confianza y urgencia."
 
 #. Author of the plugin
-#: plogins-proof.php
-msgid "WPPoland"
-msgstr "WPPoland"
+#: atesto.php
+msgid "WPPoland.com"
+msgstr ""
 
 #. Author URI of the plugin
-#: plogins-proof.php
-msgid "https://plogins.com/"
-msgstr "https://plogins.com/"
-
-#: plogins-proof.php:48
-msgid ""
-"Proof - Sales Notifications for WooCommerce requires WooCommerce to be "
-"active."
+#: atesto.php
+msgid "https://wppoland.com"
 msgstr ""
-"Proof - Notificaciones de ventas para WooCommerce requiere que WooCommerce "
-"esté activo."
 
-#: src/Admin/Settings.php:44 src/Admin/Settings.php:102
-msgid "Proof: Sales Notifications"
-msgstr "Proof: Notificaciones de ventas"
+#: atesto.php:48
+msgid "Atesto requires WooCommerce to be active."
+msgstr ""
 
-#: src/Admin/Settings.php:45
-msgid "Proof"
-msgstr "Proof"
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Próximamente"
 
-#: src/Admin/Settings.php:103
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Próximamente"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "desde %1$s%2$d/año"
+
+#: src/Admin/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr "Mejora a PRO"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Get notified"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:124
+msgid "Permission denied."
+msgstr "Permiso denegado."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr "Haz más con %s"
+
+#: src/Admin/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr "Descartar este aviso"
+
+#: src/Admin/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr "Desbloquea todas las funciones PRO"
+
+#: src/Admin/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr "una licencia, todas las funciones PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr "Lo que añade %s"
+
+#: src/Admin/Settings.php:52 src/Admin/Settings.php:110
+msgid "Atesto: Sales Notifications"
+msgstr "Atesto: Notificaciones de ventas"
+
+#: src/Admin/Settings.php:53
+msgid "Atesto"
+msgstr "Atesto"
+
+#: src/Admin/Settings.php:114
 msgid ""
 "Show small popups of recent real purchases to build trust and urgency. Only "
 "a first name and city are ever shown, never full names, emails or addresses."
@@ -68,19 +118,19 @@ msgstr ""
 "generar confianza y urgencia. Sólo se muestran el nombre y la ciudad, nunca "
 "nombres completos, correos electrónicos o direcciones."
 
-#: src/Admin/Settings.php:112
+#: src/Admin/Settings.php:124
 msgid "Save changes"
 msgstr "Guardar cambios"
 
-#: src/Admin/Settings.php:123
+#: src/Admin/Settings.php:140
 msgid "General"
 msgstr "General"
 
-#: src/Admin/Settings.php:128
-msgid "Enable Proof"
-msgstr "Habilitar Proof"
+#: src/Admin/Settings.php:145
+msgid "Enable Atesto"
+msgstr "Habilitar Atesto"
 
-#: src/Admin/Settings.php:129
+#: src/Admin/Settings.php:146
 msgid ""
 "Master switch. When off, no popups are loaded or rendered anywhere on the "
 "storefront."
@@ -88,35 +138,35 @@ msgstr ""
 "Interruptor maestro. Cuando está desactivado, no se cargan ni muestran "
 "ventanas emergentes en ninguna parte del escaparate."
 
-#: src/Admin/Settings.php:135
+#: src/Admin/Settings.php:152
 msgid "Screen corner"
 msgstr "Esquina de la pantalla"
 
-#: src/Admin/Settings.php:137
+#: src/Admin/Settings.php:154
 msgid "Bottom left"
 msgstr "Abajo a la izquierda"
 
-#: src/Admin/Settings.php:138
+#: src/Admin/Settings.php:155
 msgid "Bottom right"
 msgstr "Abajo a la derecha"
 
-#: src/Admin/Settings.php:139
+#: src/Admin/Settings.php:156
 msgid "Top left"
 msgstr "Arriba a la izquierda"
 
-#: src/Admin/Settings.php:140
+#: src/Admin/Settings.php:157
 msgid "Top right"
 msgstr "Arriba a la derecha"
 
-#: src/Admin/Settings.php:143
+#: src/Admin/Settings.php:160
 msgid "Which corner of the screen the popup slides in from."
 msgstr "Desde qué esquina de la pantalla se desliza la ventana emergente."
 
-#: src/Admin/Settings.php:156
+#: src/Admin/Settings.php:173
 msgid "What each popup shows"
 msgstr "Qué muestra cada ventana emergente"
 
-#: src/Admin/Settings.php:157
+#: src/Admin/Settings.php:174
 msgid ""
 "Each popup shows the buyer's first name, billing city, the product name and "
 "how long ago the purchase happened. Surnames, emails and full addresses are "
@@ -127,29 +177,30 @@ msgstr ""
 "compra. Nunca se muestran apellidos, correos electrónicos y direcciones "
 "completas."
 
-#: src/Admin/Settings.php:165
+#: src/Admin/Settings.php:182
 msgid "Fallback name"
 msgstr "Nombre alternativo"
 
-#. translators: %s is the default fallback word shown when an order has no first name.
-#: src/Admin/Settings.php:168
+#: src/Admin/Settings.php:186
 #, php-format
 msgid ""
 "Shown in place of a first name when the order has none. Leave blank to use "
-"the default, %s."
+"the default, “%s”."
 msgstr ""
-"Se muestra en lugar de un nombre cuando el pedido no lo tiene. Déjelo en "
-"blanco para usar el valor predeterminado, %s."
 
-#: src/Admin/Settings.php:181
+#: src/Admin/Settings.php:187 src/Service/OrderFeed.php:130
+msgid "Someone"
+msgstr "alguien"
+
+#: src/Admin/Settings.php:201
 msgid "Timing"
 msgstr "Tiempos"
 
-#: src/Admin/Settings.php:184
+#: src/Admin/Settings.php:204
 msgid "Initial delay (seconds)"
 msgstr "Retraso inicial (segundos)"
 
-#: src/Admin/Settings.php:184
+#: src/Admin/Settings.php:204
 msgid ""
 "How long to wait after the page loads before the first popup appears. "
 "Default 5 seconds."
@@ -157,47 +208,47 @@ msgstr ""
 "Cuánto tiempo esperar después de que se carga la página antes de que "
 "aparezca la primera ventana emergente. Por defecto 5 segundos."
 
-#: src/Admin/Settings.php:185
+#: src/Admin/Settings.php:205
 msgid "Display time (seconds)"
 msgstr "Tiempo de visualización (segundos)"
 
-#: src/Admin/Settings.php:185
+#: src/Admin/Settings.php:205
 msgid ""
 "How long each popup stays on screen before sliding away. Default 6 seconds."
 msgstr ""
 "Cuánto tiempo permanece cada ventana emergente en la pantalla antes de "
 "desaparecer. Por defecto 6 segundos."
 
-#: src/Admin/Settings.php:186
+#: src/Admin/Settings.php:206
 msgid "Interval between popups (seconds)"
 msgstr "Intervalo entre ventanas emergentes (segundos)"
 
-#: src/Admin/Settings.php:186
+#: src/Admin/Settings.php:206
 msgid ""
-"Gap between one popup disappearing and the next appearing. Lower values show "
-"more popups; higher values feel calmer. Default 12 seconds."
+"Gap between one popup disappearing and the next appearing. Lower values show"
+" more popups; higher values feel calmer. Default 12 seconds."
 msgstr ""
 "Brecha entre la desaparición de una ventana emergente y la aparición de la "
 "siguiente. Los valores más bajos muestran más ventanas emergentes; Los "
 "valores más altos se sienten más tranquilos. Por defecto 12 segundos."
 
-#: src/Admin/Settings.php:199
+#: src/Admin/Settings.php:219
 msgid "Example"
 msgstr "Ejemplo"
 
-#: src/Admin/Settings.php:206
+#: src/Admin/Settings.php:226
 msgid "Alex from Berlin"
 msgstr "Alex de Berlín"
 
-#: src/Admin/Settings.php:206
+#: src/Admin/Settings.php:226
 msgid "bought Merino Hoodie"
 msgstr "compró sudadera con capucha Merino"
 
-#: src/Admin/Settings.php:207
+#: src/Admin/Settings.php:227
 msgid "2 hours ago"
 msgstr "hace 2 horas"
 
-#: src/Admin/Settings.php:224
+#: src/Admin/Settings.php:244
 msgid "Enabled"
 msgstr "Habilitado"
 
@@ -219,72 +270,39 @@ msgstr "de"
 msgid "bought"
 msgstr "compró"
 
-#: src/Service/OrderFeed.php:124
-msgid "Someone"
-msgstr "alguien"
-
 #. translators: %s: human-readable time difference, e.g. "2 hours".
-#: src/Service/OrderFeed.php:171
+#: src/Service/OrderFeed.php:177
 #, php-format
 msgid "%s ago"
 msgstr "Hace %s"
 
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Próximamente"
+#~ msgid "Proof - Sales Notifications for WooCommerce"
+#~ msgstr "Proof - Notificaciones de ventas para WooCommerce"
 
-#: src/Admin/ProUpsell.php:78
-msgid "Coming soon"
-msgstr "Próximamente"
+#~ msgid "https://plogins.com/proof/"
+#~ msgstr "https://plogins.com/es/proof/"
 
-#. translators: %d: yearly price in PLN
-#: src/Admin/ProUpsell.php:83
+#~ msgid "WPPoland"
+#~ msgstr "WPPoland"
+
+#~ msgid "https://plogins.com/"
+#~ msgstr "https://plogins.com/"
+
+#~ msgid ""
+#~ "Proof - Sales Notifications for WooCommerce requires WooCommerce to be "
+#~ "active."
+#~ msgstr ""
+#~ "Proof - Notificaciones de ventas para WooCommerce requiere que WooCommerce "
+#~ "esté activo."
+
 #, php-format
-msgid "od %d zł/rok"
-msgstr "desde %d zł/año"
+#~ msgid ""
+#~ "Shown in place of a first name when the order has none. Leave blank to use "
+#~ "the default, %s."
+#~ msgstr ""
+#~ "Se muestra en lugar de un nombre cuando el pedido no lo tiene. Déjelo en "
+#~ "blanco para usar el valor predeterminado, %s."
 
-#. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:88
 #, php-format
-msgid "from %1$s%2$d/yr"
-msgstr "desde %1$s%2$d/año"
-
-#: src/Admin/ProUpsell.php:97
-msgid "Upgrade to PRO"
-msgstr "Mejora a PRO"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Powiadom mnie"
-msgstr "Avísame"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Get notified"
-msgstr "Avísame"
-
-#: src/Admin/ProUpsell.php:128
-msgid "Permission denied."
-msgstr "Permiso denegado."
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:158
-#, php-format
-msgid "Do more with %s"
-msgstr "Haz más con %s"
-
-#: src/Admin/ProUpsell.php:165
-msgid "Dismiss this notice"
-msgstr "Descartar este aviso"
-
-#: src/Admin/ProUpsell.php:182
-msgid "Unlock every PRO feature"
-msgstr "Desbloquea todas las funciones PRO"
-
-#: src/Admin/ProUpsell.php:195
-msgid "one licence, every PRO feature"
-msgstr "una licencia, todas las funciones PRO"
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:214
-#, php-format
-msgid "What %s adds"
-msgstr "Lo que añade %s"
+#~ msgid "od %d zł/rok"
+#~ msgstr "desde %d zł/año"

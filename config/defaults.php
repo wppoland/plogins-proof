@@ -23,8 +23,11 @@ return [
     // Screen corner: bottom-left | bottom-right | top-left | top-right.
     'position' => 'bottom-left',
 
-    // Privacy fallback shown when a first name is missing.
-    'anonymous_name_text' => 'Someone',
+    // Privacy fallback shown when a first name is missing. Empty on purpose:
+    // a literal here can never reach the .pot, so shoppers in every language
+    // read the English word. OrderFeed translates it when this is blank, and
+    // a shop that types its own wording still wins.
+    'anonymous_name_text' => '',
 
     // Timing (seconds). All clamped to sane ranges on save.
     'initial_delay' => 5,

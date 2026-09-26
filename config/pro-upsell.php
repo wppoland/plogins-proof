@@ -10,12 +10,11 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Proof Pro',
+    'name'       => 'Atesto Pro',
     'url'        => 'https://plogins.com/plogins-proof-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',
-    'price_pln'  => 85,
     'lead'       => [
         'en' => 'The features below ship in the current PRO release.',
         'pl' => 'Poniższe funkcje są dostępne w bieżącym wydaniu PRO.',
